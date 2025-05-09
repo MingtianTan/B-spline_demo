@@ -1,0 +1,10 @@
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/uninstall.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/cpp_bs_demo_uninstall.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/point_generator.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/test.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/edit_cache.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/rebuild_cache.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/list_install_components.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/install.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/install/local.dir
+/home/teemty/B-spline-demo/demo_ws/build/CMakeFiles/install/strip.dir

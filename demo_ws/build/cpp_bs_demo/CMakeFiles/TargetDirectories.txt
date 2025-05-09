@@ -1,0 +1,9 @@
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/uninstall.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/cpp_bs_demo_uninstall.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/test.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/edit_cache.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/rebuild_cache.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/list_install_components.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/install.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/install/local.dir
+/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles/install/strip.dir
