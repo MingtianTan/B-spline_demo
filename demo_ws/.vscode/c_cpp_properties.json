@@ -5,6 +5,8 @@
           "includePath": [
               "${workspaceFolder}/**",
               "/home/teemty/B-spline-demo/demo_ws/install/**/include/**",
+              "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/**",
+
               "/home/teemty/B-spline-demo/demo_ws/build/**/include/**",
               "/opt/ros/jazzy/include/**",
               "/usr/include/**"

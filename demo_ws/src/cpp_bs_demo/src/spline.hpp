@@ -6,8 +6,8 @@
 #include <cassert>
 #include <memory>
 
-#include "cpp_bs_demo_interfaces/msg/trajectory.hpp"
-#include "geometry_msgs/msg/vector3.hpp" 
+#include "cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/trajectory.hpp"
+#include "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/trajectory.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 class Bspline{
