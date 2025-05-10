@@ -5,5 +5,9 @@
     "python.analysis.extraPaths": [
         "/opt/ros/jazzy/lib/python3.12/site-packages"
     ],
-    "cmake.sourceDirectory": "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo"
+    "cmake.sourceDirectory": "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo",
+    "cmake.configureArgs": [
+        "-DCMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install"
+    ],
+    "cmake.generator": "Unix Makefiles"
 }

@@ -1,0 +1,325 @@
+[0.000000] (-) TimerEvent: {}
+[0.000769] (-) JobUnselected: {'identifier': 'cpp_bs_demo'}
+[0.000925] (cpp_bs_demo_interfaces) JobQueued: {'identifier': 'cpp_bs_demo_interfaces', 'dependencies': OrderedDict()}
+[0.000996] (cpp_bs_demo_interfaces) JobStarted: {'identifier': 'cpp_bs_demo_interfaces'}
+[0.013938] (cpp_bs_demo_interfaces) JobProgress: {'identifier': 'cpp_bs_demo_interfaces', 'progress': 'cmake'}
+[0.014622] (cpp_bs_demo_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces'], 'cwd': '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'teemty', 'all_proxy': 'socks://127.0.0.1:10810/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/teemty', 'OLDPWD': '/home/teemty/B-spline-demo', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2647', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=dc8673b3431077aec61eb3c3681e4537', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'teemty', 'ALL_PROXY': 'socks://127.0.0.1:10810/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'teemty', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/teemty/.fishros/bin/', 'SESSION_MANAGER': 'local/teemty-computer:@/tmp/.ICE-unix/2647,unix/teemty-computer:/tmp/.ICE-unix/2647', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fd6a499a_dd18_4278_a284_38f28a9405ad', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JPE952', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.389', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=dc8673b3431077aec61eb3c3681e4537', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098363] (-) TimerEvent: {}
+[0.111830] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.198643] (-) TimerEvent: {}
+[0.207544] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.242629] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.298814] (-) TimerEvent: {}
+[0.399982] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.400277] (-) TimerEvent: {}
+[0.413474] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.413977] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.414462] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.432788] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500458] (-) TimerEvent: {}
+[0.600942] (-) TimerEvent: {}
+[0.604241] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.618921] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.619466] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.620070] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.623447] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.701159] (-) TimerEvent: {}
+[0.801594] (-) TimerEvent: {}
+[0.856311] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.901745] (-) TimerEvent: {}
+[1.002286] (-) TimerEvent: {}
+[1.009874] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.016470] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.081336] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.102396] (-) TimerEvent: {}
+[1.133387] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.137258] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[1.158610] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.202550] (-) TimerEvent: {}
+[1.303051] (-) TimerEvent: {}
+[1.403573] (-) TimerEvent: {}
+[1.504005] (-) TimerEvent: {}
+[1.604480] (-) TimerEvent: {}
+[1.704992] (-) TimerEvent: {}
+[1.805506] (-) TimerEvent: {}
+[1.906014] (-) TimerEvent: {}
+[2.006531] (-) TimerEvent: {}
+[2.107016] (-) TimerEvent: {}
+[2.207521] (-) TimerEvent: {}
+[2.212481] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.307677] (-) TimerEvent: {}
+[2.408187] (-) TimerEvent: {}
+[2.508647] (-) TimerEvent: {}
+[2.609188] (-) TimerEvent: {}
+[2.709800] (-) TimerEvent: {}
+[2.810383] (-) TimerEvent: {}
+[2.910942] (-) TimerEvent: {}
+[3.011473] (-) TimerEvent: {}
+[3.022667] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.112046] (-) TimerEvent: {}
+[3.212517] (-) TimerEvent: {}
+[3.313028] (-) TimerEvent: {}
+[3.413483] (-) TimerEvent: {}
+[3.513900] (-) TimerEvent: {}
+[3.614425] (-) TimerEvent: {}
+[3.714883] (-) TimerEvent: {}
+[3.815406] (-) TimerEvent: {}
+[3.915854] (-) TimerEvent: {}
+[4.016411] (-) TimerEvent: {}
+[4.093745] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.097239] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.116623] (-) TimerEvent: {}
+[4.217030] (-) TimerEvent: {}
+[4.317470] (-) TimerEvent: {}
+[4.324648] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.417615] (-) TimerEvent: {}
+[4.518241] (-) TimerEvent: {}
+[4.618683] (-) TimerEvent: {}
+[4.719182] (-) TimerEvent: {}
+[4.819610] (-) TimerEvent: {}
+[4.920519] (-) TimerEvent: {}
+[5.021014] (-) TimerEvent: {}
+[5.026316] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.112225] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.121118] (-) TimerEvent: {}
+[5.134932] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.136254] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.139555] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Configuring done (5.1s)\n'}
+[5.187235] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.202449] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces\n'}
+[5.216722] (cpp_bs_demo_interfaces) CommandEnded: {'returncode': 0}
+[5.218785] (cpp_bs_demo_interfaces) JobProgress: {'identifier': 'cpp_bs_demo_interfaces', 'progress': 'build'}
+[5.218857] (cpp_bs_demo_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'teemty', 'all_proxy': 'socks://127.0.0.1:10810/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/teemty', 'OLDPWD': '/home/teemty/B-spline-demo', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2647', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=dc8673b3431077aec61eb3c3681e4537', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'teemty', 'ALL_PROXY': 'socks://127.0.0.1:10810/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'teemty', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/teemty/.fishros/bin/', 'SESSION_MANAGER': 'local/teemty-computer:@/tmp/.ICE-unix/2647,unix/teemty-computer:/tmp/.ICE-unix/2647', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fd6a499a_dd18_4278_a284_38f28a9405ad', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JPE952', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.389', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=dc8673b3431077aec61eb3c3681e4537', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.221232] (-) TimerEvent: {}
+[5.305355] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.318851] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_cpp_bs_demo_interfaces\n'}
+[5.321332] (-) TimerEvent: {}
+[5.422140] (-) TimerEvent: {}
+[5.522734] (-) TimerEvent: {}
+[5.601430] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[  2%] Built target cpp_bs_demo_interfaces__rosidl_generator_type_description\n'}
+[5.621538] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.623088] (-) TimerEvent: {}
+[5.626697] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.629124] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'creating cpp_bs_demo_interfaces.egg-info\n'}
+[5.645635] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.652054] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'writing cpp_bs_demo_interfaces.egg-info/PKG-INFO\n'}
+[5.652608] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'writing dependency_links to cpp_bs_demo_interfaces.egg-info/dependency_links.txt\n'}
+[5.652909] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'writing top-level names to cpp_bs_demo_interfaces.egg-info/top_level.txt\n'}
+[5.653041] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"writing manifest file 'cpp_bs_demo_interfaces.egg-info/SOURCES.txt'\n"}
+[5.718293] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"reading manifest file 'cpp_bs_demo_interfaces.egg-info/SOURCES.txt'\n"}
+[5.721258] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"writing manifest file 'cpp_bs_demo_interfaces.egg-info/SOURCES.txt'\n"}
+[5.723210] (-) TimerEvent: {}
+[5.756058] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_cpp_bs_demo_interfaces_egg\n'}
+[5.823490] (-) TimerEvent: {}
+[5.924845] (-) TimerEvent: {}
+[5.994398] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[  8%] Built target cpp_bs_demo_interfaces__cpp\n'}
+[6.021637] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cpp_bs_demo_interfaces/msg/detail/trajectory__description.c.o\x1b[0m\n'}
+[6.022140] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cpp_bs_demo_interfaces/msg/detail/trajectory__functions.c.o\x1b[0m\n'}
+[6.023302] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.c.o\x1b[0m\n'}
+[6.025026] (-) TimerEvent: {}
+[6.105053] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libcpp_bs_demo_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[6.125177] (-) TimerEvent: {}
+[6.174106] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 20%] Built target cpp_bs_demo_interfaces__rosidl_generator_c\n'}
+[6.192902] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.193477] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.193621] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.194800] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.195313] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.196586] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.225371] (-) TimerEvent: {}
+[6.326344] (-) TimerEvent: {}
+[6.426794] (-) TimerEvent: {}
+[6.530280] (-) TimerEvent: {}
+[6.539848] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.c.o\x1b[0m\n'}
+[6.544346] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/cpp_bs_demo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cpp_bs_demo_interfaces/msg/trajectory__type_support.cpp.o\x1b[0m\n'}
+[6.563234] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cpp_bs_demo_interfaces/msg/detail/dds_fastrtps/trajectory__type_support.cpp.o\x1b[0m\n'}
+[6.564837] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_bs_demo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cpp_bs_demo_interfaces/msg/trajectory__type_support.cpp.o\x1b[0m\n'}
+[6.567830] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[6.575360] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.cpp.o\x1b[0m\n'}
+[6.606121] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libcpp_bs_demo_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.625204] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_bs_demo_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.631364] (-) TimerEvent: {}
+[6.659009] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 61%] Built target cpp_bs_demo_interfaces__rosidl_typesupport_introspection_c\n'}
+[6.690220] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 61%] Built target cpp_bs_demo_interfaces__rosidl_typesupport_c\n'}
+[6.731621] (-) TimerEvent: {}
+[6.832187] (-) TimerEvent: {}
+[6.933564] (-) TimerEvent: {}
+[6.937932] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_bs_demo_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.999718] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 64%] Built target cpp_bs_demo_interfaces__rosidl_typesupport_cpp\n'}
+[7.033858] (-) TimerEvent: {}
+[7.072604] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.134169] (-) TimerEvent: {}
+[7.194064] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 67%] Built target cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[7.196923] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.234436] (-) TimerEvent: {}
+[7.281075] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 70%] Built target cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[7.307914] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.334647] (-) TimerEvent: {}
+[7.434930] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 73%] Built target cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[7.435299] (-) TimerEvent: {}
+[7.474026] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 73%] Built target cpp_bs_demo_interfaces\n'}
+[7.509520] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.535441] (-) TimerEvent: {}
+[7.635838] (-) TimerEvent: {}
+[7.736336] (-) TimerEvent: {}
+[7.836754] (-) TimerEvent: {}
+[7.921422] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 76%] Built target cpp_bs_demo_interfaces__py\n'}
+[7.936874] (-) TimerEvent: {}
+[7.951092] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/cpp_bs_demo_interfaces/msg/_trajectory_s.c.o\x1b[0m\n'}
+[8.037137] (-) TimerEvent: {}
+[8.137615] (-) TimerEvent: {}
+[8.151973] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libcpp_bs_demo_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[8.232563] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 82%] Built target cpp_bs_demo_interfaces__rosidl_generator_py\n'}
+[8.237836] (-) TimerEvent: {}
+[8.267851] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/cpp_bs_demo_interfaces/_cpp_bs_demo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[8.269458] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/cpp_bs_demo_interfaces/_cpp_bs_demo_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[8.269670] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/cpp_bs_demo_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/cpp_bs_demo_interfaces/_cpp_bs_demo_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[8.338633] (-) TimerEvent: {}
+[8.411279] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.411655] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.412569] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.438865] (-) TimerEvent: {}
+[8.464329] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[100%] Built target cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[8.464756] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[100%] Built target cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[8.465007] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'[100%] Built target cpp_bs_demo_interfaces_s__rosidl_typesupport_c\n'}
+[8.485423] (cpp_bs_demo_interfaces) CommandEnded: {'returncode': 0}
+[8.487279] (cpp_bs_demo_interfaces) JobProgress: {'identifier': 'cpp_bs_demo_interfaces', 'progress': 'install'}
+[8.502038] (cpp_bs_demo_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces'], 'cwd': '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'teemty', 'all_proxy': 'socks://127.0.0.1:10810/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/teemty', 'OLDPWD': '/home/teemty/B-spline-demo', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2647', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=dc8673b3431077aec61eb3c3681e4537', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'teemty', 'ALL_PROXY': 'socks://127.0.0.1:10810/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'teemty', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/teemty/.fishros/bin/', 'SESSION_MANAGER': 'local/teemty-computer:@/tmp/.ICE-unix/2647,unix/teemty-computer:/tmp/.ICE-unix/2647', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fd6a499a_dd18_4278_a284_38f28a9405ad', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JPE952', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.389', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=dc8673b3431077aec61eb3c3681e4537', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[8.515479] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.515857] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/ament_index/resource_index/rosidl_interfaces/cpp_bs_demo_interfaces\n'}
+[8.516082] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/msg/Trajectory.json\n'}
+[8.516181] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces\n'}
+[8.516353] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg\n'}
+[8.516454] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/trajectory.h\n'}
+[8.516534] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.516613] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail\n'}
+[8.516683] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__functions.h\n'}
+[8.516755] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.h\n'}
+[8.516823] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__description.c\n'}
+[8.516952] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__struct.h\n'}
+[8.517218] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.c\n'}
+[8.517354] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__functions.c\n'}
+[8.517453] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/library_path.sh\n'}
+[8.517550] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/library_path.dsv\n'}
+[8.517651] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_generator_c.so\n'}
+[8.517845] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_generator_c.so" to ""\n'}
+[8.517925] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces\n'}
+[8.518000] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg\n'}
+[8.518071] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.518143] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail\n'}
+[8.518220] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[8.518334] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[8.518424] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.518562] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces\n'}
+[8.518649] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg\n'}
+[8.518730] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.518840] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail\n'}
+[8.518909] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__rosidl_typesupport_introspection_c.h\n'}
+[8.518979] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.c\n'}
+[8.519048] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[8.519176] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.519370] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_c.so\n'}
+[8.520008] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[8.520102] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces\n'}
+[8.520175] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg\n'}
+[8.520254] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.520325] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/trajectory.hpp\n'}
+[8.520392] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail\n'}
+[8.520457] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.hpp\n'}
+[8.520523] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__struct.hpp\n'}
+[8.520589] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__builder.hpp\n'}
+[8.520656] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__traits.hpp\n'}
+[8.520772] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces\n'}
+[8.520878] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg\n'}
+[8.521113] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.521250] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail\n'}
+[8.521367] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.521468] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/dds_fastrtps\n'}
+[8.521546] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.521695] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.521785] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces\n'}
+[8.521868] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg\n'}
+[8.521941] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail\n'}
+[8.522011] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.522082] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.cpp\n'}
+[8.522151] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[8.522297] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.522383] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_cpp.so\n'}
+[8.522460] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[8.522535] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/pythonpath.sh\n'}
+[8.522606] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/pythonpath.dsv\n'}
+[8.522674] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces-0.0.0-py3.12.egg-info\n'}
+[8.522793] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[8.522885] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[8.523018] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[8.523127] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[8.523262] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces\n'}
+[8.523351] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_c.so\n'}
+[8.523457] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/_cpp_bs_demo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.523530] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/msg\n'}
+[8.523647] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/msg/_trajectory.py\n'}
+[8.523718] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/msg/_trajectory_s.c\n'}
+[8.523824] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/msg/__init__.py\n'}
+[8.523916] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[8.523985] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[8.524054] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/_cpp_bs_demo_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.524204] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/__init__.py\n'}
+[8.524311] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/_cpp_bs_demo_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[8.539053] (-) TimerEvent: {}
+[8.585960] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"Listing '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces'...\n"}
+[8.586316] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"Compiling '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/__init__.py'...\n"}
+[8.586421] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"Listing '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/msg'...\n"}
+[8.586499] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"Compiling '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/msg/__init__.py'...\n"}
+[8.586593] (cpp_bs_demo_interfaces) StdoutLine: {'line': b"Compiling '/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/msg/_trajectory.py'...\n"}
+[8.594990] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[8.595405] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.595580] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[8.595693] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.595898] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_c.so\n'}
+[8.596152] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[8.596316] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_generator_py.so\n'}
+[8.596517] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/libcpp_bs_demo_interfaces__rosidl_generator_py.so" to ""\n'}
+[8.596749] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/msg/Trajectory.idl\n'}
+[8.596831] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/msg/Trajectory.msg\n'}
+[8.597025] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/ament_index/resource_index/package_run_dependencies/cpp_bs_demo_interfaces\n'}
+[8.597248] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/ament_index/resource_index/parent_prefix_path/cpp_bs_demo_interfaces\n'}
+[8.597350] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/ament_prefix_path.sh\n'}
+[8.597583] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/ament_prefix_path.dsv\n'}
+[8.597669] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/path.sh\n'}
+[8.597811] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/environment/path.dsv\n'}
+[8.597885] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/local_setup.bash\n'}
+[8.597998] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/local_setup.sh\n'}
+[8.598139] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/local_setup.zsh\n'}
+[8.598262] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/local_setup.dsv\n'}
+[8.598372] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/package.dsv\n'}
+[8.598457] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/ament_index/resource_index/packages/cpp_bs_demo_interfaces\n'}
+[8.598576] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_generator_cExport.cmake\n'}
+[8.598683] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.598782] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.598878] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.599010] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.599082] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.599155] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[8.599263] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.599336] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_generator_cppExport.cmake\n'}
+[8.599444] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.599541] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.599628] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.599728] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.599839] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[8.599970] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.600182] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_generator_pyExport.cmake\n'}
+[8.600310] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/export_cpp_bs_demo_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.600423] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[8.600539] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.600611] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.600699] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.600805] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.600907] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.601016] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.601125] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfacesConfig.cmake\n'}
+[8.601204] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake/cpp_bs_demo_interfacesConfig-version.cmake\n'}
+[8.601310] (cpp_bs_demo_interfaces) StdoutLine: {'line': b'-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/package.xml\n'}
+[8.605383] (cpp_bs_demo_interfaces) CommandEnded: {'returncode': 0}
+[8.633939] (cpp_bs_demo_interfaces) JobEnded: {'identifier': 'cpp_bs_demo_interfaces', 'rc': 0}
+[8.635067] (-) EventReactorShutdown: {}

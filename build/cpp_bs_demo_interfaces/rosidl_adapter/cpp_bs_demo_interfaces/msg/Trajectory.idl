@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cpp_bs_demo_interfaces/msg/Trajectory.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+#include "std_msgs/msg/Header.idl"
+
+module cpp_bs_demo_interfaces {
+  module msg {
+    struct Trajectory {
+      std_msgs::msg::Header header;
+
+      builtin_interfaces::msg::Time traj_start_time;
+
+      sequence<geometry_msgs::msg::Vector3> control_points;
+
+      sequence<double> u;
+
+      geometry_msgs::msg::Vector3 init_p;
+
+      geometry_msgs::msg::Vector3 init_v;
+
+      geometry_msgs::msg::Vector3 init_a;
+
+      geometry_msgs::msg::Vector3 tail_p;
+
+      geometry_msgs::msg::Vector3 tail_v;
+
+      geometry_msgs::msg::Vector3 tail_a;
+    };
+  };
+};

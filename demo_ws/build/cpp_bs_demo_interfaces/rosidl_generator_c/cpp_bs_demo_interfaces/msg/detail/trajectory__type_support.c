@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "cpp_bs_demo_interfaces/msg/detail/trajectory__struct.h"
-#include "cpp_bs_demo_interfaces/msg/detail/trajectory__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "cpp_bs_demo_interfaces/msg/detail/trajectory__functions.h"
+#include "cpp_bs_demo_interfaces/msg/detail/trajectory__struct.h"
 #include "cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.h"
 
 #ifdef __cplusplus

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "cpp_bs_demo_interfaces__py",
+		"source" : "/home/teemty/B-spline-demo/build/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces__py"
+	}
+}

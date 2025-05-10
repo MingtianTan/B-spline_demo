@@ -1,3 +1,8 @@
+// Notes:
+// this file was orginally made by HolyQwQ @FASTLAB
+// Modified by Teemty during internship @FASTLAB
+// 2025 May
+
 #include <vector>
 #include <cmath>
 #include <iostream>
@@ -11,22 +16,41 @@
 
 class Bspline{
     public:
-        //用于优化的信息
-        int p_, n_, m_;// n+1 control points控制点,  m+1 knots节点x向量, m+1 = n+1 + p+1, p是次数，阶数 = 次>数 + 1
-        Eigen::VectorXd u_;
-        Eigen::MatrixXd control_points_;
-        double interval_;
-        Eigen::Vector3d P_0, P_T, V_0, V_T, A_0, A_T;//起始点与终点约束
-        std::vector<Eigen::Vector3d> path_;  //   
+        // optimization parameters
+        int p_, n_, m_;  
+        Eigen::VectorXd u_;  
+        // VectorXd: dynamic size & double type
+        Eigen::MatrixXd control_points_; 
+        // MatrixXd: dynamic size & double type
+        double interval_;  
+        Eigen::Vector3d P_0, P_T, V_0, V_T, A_0, A_T;  
+        std::vector<Eigen::Vector3d> path_;  
+
+        //    --variable_name--         --descrption--
+        //    p_, n_, m_                power of curve; control point number (n+1); node vector number (m+1)
+        //    u_                        node vector (u coordinate, length m+1)
+        //    control_points_           control points matrix (each row is a control point coordinate)
+        //    interval_                 sampling interval or time interval
+        //    P_0, P_T                  start and end position (P) constraints
+        //    V_0, V_T                  tart and end velocity (V) constraints
+        //    A_0, A_T                  start and end acceleration (A) constraints
+        //    path_                     generated path point sequence (each element is a 3D coordinate point on the path)
+        //    --variable_name--         --descrption--
     
     private: 
         Eigen::Matrix4d matrix_pos;
         Eigen::Matrix<double, 3, 4> matrix_vel;
         Eigen::Matrix<double, 2, 4> matrix_acc;
+
+    //    --variable_name--         --descrption--
+    //    matrix_pos                position matrix
+    //    matrix_vel                velocity matrix
+    //    matrix_acc                acceleration matrix
+    //    --variable_name--         --descrption--
     
     public:
         typedef std::shared_ptr<Bspline> Ptr;
-    
+        // constructor
         Bspline(){
             matrix_pos <<  1,  4,  1, 0,
                           -3,  0,  3, 0,
@@ -41,17 +65,33 @@ class Bspline{
                           -6, 18,-18, 6;
         }
         ~Bspline(){}
-    
+    // typedef std::shared_ptr<Bspline> Ptr; 
+    // std::shared_ptr<Bspline> ； pointer to Bspline class rename to Ptr
+    //
+    //
+
+        // constructor
+        // Bspline(const cpp_bs_demo_interfaces::msg::Trajectory & msg)
         // 服务于msg之间的转换
-        Bspline(const cpp_bs_demo_interfaces::msg::Trajectory & msg)
+        Bspline(const std::shared_ptr<const cpp_bs_demo_interfaces::msg::Trajectory>& msg)
         {
-            // 填充控制点
+            
             size_t num_control_points = msg->control_points.size();
+            // return number of control points: std::vector<geometry_msgs::msg::Vector3>::size();
+
             if (num_control_points == 0) {
                 throw std::runtime_error("BSplineTrajectory message contains no control points.");
             }
             control_points_.resize(3, num_control_points);
             for (size_t i = 0; i < num_control_points; ++i) {
+                // size_t unsigned integer
+                //laod to class
+                //
+                //   x1    x2   ...
+                //   y1    y2   ...
+                //   z1    z2   ...
+                //
+                //
                 control_points_(0, i) = msg->control_points[i].x;
                 control_points_(1, i) = msg->control_points[i].y;
                 control_points_(2, i) = msg->control_points[i].z;

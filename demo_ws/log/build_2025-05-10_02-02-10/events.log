@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000732] (-) JobUnselected: {'identifier': 'cpp_bs_demo'}
-[0.000791] (-) JobUnselected: {'identifier': 'cpp_bs_demo_interfaces'}
-[0.000820] (-) EventReactorShutdown: {}

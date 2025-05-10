@@ -1,0 +1,16 @@
+/home/teemty/B-spline-demo/install/cpp_bs_demo/lib/cpp_bs_demo/point_generator
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/ament_index/resource_index/package_run_dependencies/cpp_bs_demo
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/ament_index/resource_index/parent_prefix_path/cpp_bs_demo
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.sh
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.dsv
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.sh
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.dsv
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.bash
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.sh
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.zsh
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.dsv
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/package.dsv
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/ament_index/resource_index/packages/cpp_bs_demo
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig.cmake
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig-version.cmake
+/home/teemty/B-spline-demo/install/cpp_bs_demo/share/cpp_bs_demo/package.xml
