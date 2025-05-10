@@ -1,0 +1,32 @@
+[0.018s] Invoking command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8
+[0.063s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.427s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.468s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.481s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.498s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.518s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.614s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.616s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.729s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.833s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.854s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.892s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.892s]   By not providing "Findcpp_bs_demo_interface.cmake" in CMAKE_MODULE_PATH
+[0.892s]   this project has asked CMake to find a package configuration file provided
+[0.892s]   by "cpp_bs_demo_interface", but CMake did not find one.
+[0.892s] 
+[0.892s]   Could not find a package configuration file provided by
+[0.892s]   "cpp_bs_demo_interface" with any of the following names:
+[0.892s] 
+[0.892s]     cpp_bs_demo_interfaceConfig.cmake
+[0.892s]     cpp_bs_demo_interface-config.cmake
+[0.892s] 
+[0.893s]   Add the installation prefix of "cpp_bs_demo_interface" to CMAKE_PREFIX_PATH
+[0.893s]   or set "cpp_bs_demo_interface_DIR" to a directory containing one of the
+[0.893s]   above files.  If "cpp_bs_demo_interface" provides a separate development
+[0.893s]   package or SDK, be sure it has been installed.
+[0.893s] 
+[0.893s] [0m
+[0.893s] -- Configuring incomplete, errors occurred!
+[0.903s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.906s] Invoked command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8

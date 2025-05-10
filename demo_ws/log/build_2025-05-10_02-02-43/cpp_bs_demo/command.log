@@ -1,0 +1,2 @@
+Invoking command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8
+Invoked command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8

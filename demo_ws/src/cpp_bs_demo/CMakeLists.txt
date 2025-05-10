@@ -11,10 +11,16 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
+find_package(cpp_bs_demo_interfaces REQUIRED)
+
 
 # 声明可执行文件
 add_executable(point_generator src/publisher.cpp)
-ament_target_dependencies(point_generator rclcpp std_msgs geometry_msgs builtin_interfaces)
+ament_target_dependencies(point_generator 
+    rclcpp 
+    std_msgs 
+    cpp_bs_demo_interfaces    # 添加对接口包的依赖
+)
 
 # 安装
 install(TARGETS

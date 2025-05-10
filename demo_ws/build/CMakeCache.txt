@@ -372,6 +372,12 @@ cpp_bs_demo_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 cpp_bs_demo_SOURCE_DIR:STATIC=/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo
 
+//The directory containing a CMake configuration file for cpp_bs_demo_interface.
+cpp_bs_demo_interface_DIR:PATH=cpp_bs_demo_interface_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for cpp_bs_demo_interfaces.
+cpp_bs_demo_interfaces_DIR:PATH=cpp_bs_demo_interfaces_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/jazzy/lib/cmake/fastcdr
 
