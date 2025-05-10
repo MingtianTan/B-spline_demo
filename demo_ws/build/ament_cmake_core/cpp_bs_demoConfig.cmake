@@ -16,7 +16,7 @@ set(_cpp_bs_demo_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT cpp_bs_demo_FIND_QUIETLY)
-  message(STATUS "Found cpp_bs_demo: 0.0.0 (${cpp_bs_demo_DIR})")
+  message(STATUS "Found cpp_bs_demo: 0.0.1 (${cpp_bs_demo_DIR})")
 endif()
 
 # warn when using a deprecated package

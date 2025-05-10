@@ -197,6 +197,43 @@ cpp_bs_demo_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_bs_demo_uninstall.dir/build.make CMakeFiles/cpp_bs_demo_uninstall.dir/build
 .PHONY : cpp_bs_demo_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named point_generator
+
+# Build rule for target.
+point_generator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 point_generator
+.PHONY : point_generator
+
+# fast build rule for target.
+point_generator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/build
+.PHONY : point_generator/fast
+
+src/publisher.o: src/publisher.cpp.o
+.PHONY : src/publisher.o
+
+# target to build an object file
+src/publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/src/publisher.cpp.o
+.PHONY : src/publisher.cpp.o
+
+src/publisher.i: src/publisher.cpp.i
+.PHONY : src/publisher.i
+
+# target to preprocess a source file
+src/publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/src/publisher.cpp.i
+.PHONY : src/publisher.cpp.i
+
+src/publisher.s: src/publisher.cpp.s
+.PHONY : src/publisher.s
+
+# target to generate assembly for a file
+src/publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/src/publisher.cpp.s
+.PHONY : src/publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... cpp_bs_demo_uninstall"
 	@echo "... uninstall"
+	@echo "... point_generator"
+	@echo "... src/publisher.o"
+	@echo "... src/publisher.i"
+	@echo "... src/publisher.s"
 .PHONY : help
 
 

@@ -1,0 +1,10 @@
+std_msgs/Header header
+builtin_interfaces/Time traj_start_time
+geometry_msgs/Vector3[] control_points
+float64[] u
+geometry_msgs/Vector3 init_p
+geometry_msgs/Vector3 init_v
+geometry_msgs/Vector3 init_a
+geometry_msgs/Vector3 tail_p
+geometry_msgs/Vector3 tail_v
+geometry_msgs/Vector3 tail_a

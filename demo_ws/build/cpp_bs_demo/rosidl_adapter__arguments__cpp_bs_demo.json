@@ -1,0 +1,6 @@
+{
+  "package_name": "cpp_bs_demo",
+  "non_idl_tuples": [
+    "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo:msg/Trajectory.msg"
+  ]
+}

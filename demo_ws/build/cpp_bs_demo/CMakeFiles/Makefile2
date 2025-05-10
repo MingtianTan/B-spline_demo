@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/point_generator.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +73,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/cpp_bs_demo_uninstall.dir/clean
+clean: CMakeFiles/point_generator.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +127,32 @@ cpp_bs_demo_uninstall: CMakeFiles/cpp_bs_demo_uninstall.dir/rule
 CMakeFiles/cpp_bs_demo_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_bs_demo_uninstall.dir/build.make CMakeFiles/cpp_bs_demo_uninstall.dir/clean
 .PHONY : CMakeFiles/cpp_bs_demo_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/point_generator.dir
+
+# All Build rule for target.
+CMakeFiles/point_generator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles --progress-num=1,2 "Built target point_generator"
+.PHONY : CMakeFiles/point_generator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/point_generator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/point_generator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/CMakeFiles 0
+.PHONY : CMakeFiles/point_generator.dir/rule
+
+# Convenience name for target.
+point_generator: CMakeFiles/point_generator.dir/rule
+.PHONY : point_generator
+
+# clean rule for target.
+CMakeFiles/point_generator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/clean
+.PHONY : CMakeFiles/point_generator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

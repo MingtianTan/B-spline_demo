@@ -8,6 +8,7 @@
       "includePath": [
         "/opt/ros/jazzy/include/**",
         "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/include/**",
+        "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo_interfaces/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

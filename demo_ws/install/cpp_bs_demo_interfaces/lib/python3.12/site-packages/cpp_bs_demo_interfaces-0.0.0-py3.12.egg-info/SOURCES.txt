@@ -1,0 +1,8 @@
+setup.py
+cpp_bs_demo_interfaces/__init__.py
+cpp_bs_demo_interfaces.egg-info/PKG-INFO
+cpp_bs_demo_interfaces.egg-info/SOURCES.txt
+cpp_bs_demo_interfaces.egg-info/dependency_links.txt
+cpp_bs_demo_interfaces.egg-info/top_level.txt
+cpp_bs_demo_interfaces/msg/__init__.py
+cpp_bs_demo_interfaces/msg/_trajectory.py
