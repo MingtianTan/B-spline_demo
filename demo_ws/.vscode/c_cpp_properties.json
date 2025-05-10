@@ -1,22 +1,24 @@
 {
   "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "${default}",
-        "limitSymbolsToIncludedHeaders": false
-      },
-      "includePath": [
-        "/opt/ros/jazzy/include/**",
-        "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/include/**",
-        "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo_interfaces/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS",
-      "intelliSenseMode": "gcc-x64",
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu11",
-      "cppStandard": "c++14"
-    }
+      {
+          "name": "Linux",
+          "includePath": [
+              "${workspaceFolder}/**",
+              "/home/teemty/B-spline-demo/demo_ws/install/**/include/**",
+              "/home/teemty/B-spline-demo/demo_ws/build/**/include/**",
+              "/opt/ros/jazzy/include/**",
+              "/usr/include/**"
+          ],
+          "defines": [],
+          "compilerPath": "/usr/bin/gcc",
+          "cStandard": "c11",
+          "cppStandard": "c++14",
+          "intelliSenseMode": "gcc-x64",
+          "browse": {
+              "databaseFilename": "",
+              "limitSymbolsToIncludedHeaders": true
+          }
+      }
   ],
   "version": 4
 }
