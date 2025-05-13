@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot name="ball_obstacle">
+
+  <!-- 虚拟根节点 -->
+  <link name="base_link"/>
+
+  <!-- 将 ball 挂在 base_link 上，并设置原点在 (1,1,1) -->
+  <joint name="base_to_ball" type="fixed">
+    <parent link="base_link"/>
+    <child link="ball"/>
+    <origin xyz="1 1 1" rpy="0 0 0"/>
+  </joint>
+
+  <!-- 球体 link -->
+  <link name="ball">
+    <visual>
+      <geometry>
+        <sphere radius="1.0"/>
+      </geometry>
+      <material name="green_transparent">
+        <color rgba="0 1 0 0.5"/>  <!-- 绿色 + 半透明 -->
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <sphere radius="1.0"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+
+</robot>

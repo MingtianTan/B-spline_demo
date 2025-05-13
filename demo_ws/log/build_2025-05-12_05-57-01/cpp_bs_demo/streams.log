@@ -1,0 +1,28 @@
+[0.007s] Invoking command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo': CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8
+[0.046s] [100%] Built target point_generator
+[0.052s] Invoked command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo' returned '0': CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8
+[0.053s] Invoking command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo': CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo
+[0.058s] -- Install configuration: ""
+[0.058s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/lib/cpp_bs_demo/point_generator
+[0.058s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/urdf
+[0.058s] -- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/urdf/ball_obstacle.urdf
+[0.058s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/launch
+[0.058s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/launch/bs_demo.launch.py
+[0.058s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/rviz
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/rviz/demo.rviz
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/package_run_dependencies/cpp_bs_demo
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/parent_prefix_path/cpp_bs_demo
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.sh
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.dsv
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.sh
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.dsv
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.bash
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.sh
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.zsh
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.dsv
+[0.059s] -- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/package.dsv
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/packages/cpp_bs_demo
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig.cmake
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig-version.cmake
+[0.059s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/package.xml
+[0.060s] Invoked command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo' returned '0': CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo

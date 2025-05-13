@@ -67,6 +67,18 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_bs_demo" TYPE DIRECTORY FILES "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/urdf")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_bs_demo" TYPE DIRECTORY FILES "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/launch")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_bs_demo" TYPE DIRECTORY FILES "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/rviz")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cpp_bs_demo")
 endif()
 

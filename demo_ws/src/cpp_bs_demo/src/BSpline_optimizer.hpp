@@ -1,16 +1,19 @@
 #ifndef BSPLINE_OPTIMIZER_HPP
 #define BSPLINE_OPTIMIZER_HPP
 
-#include "utils/NURBS.hpp"
-#include <ros/ros.h>
-#include <utils/visualization.hpp>
-#include "swept_volume/swept_volume_manager.hpp"
-#include <utils/lbfgs.hpp>
-#include <utils/lmbm.h>
+#include "spline.hpp"
+#include "rclcpp/rclcpp.hpp"  // 替代 <ros/ros.h>
+
+#include "visualization.hpp"
+#include "swept_volume_manager.hpp"
+#include "lbfgs.hpp"
+#include "lmbm.h"
+
 #include <cmath>
 #include <Eigen/Dense>
 #include <cassert>
 #include <thread>
+
 
 // 这个优化器混合了中端和后端的内容，方便管理我新增的代码
 

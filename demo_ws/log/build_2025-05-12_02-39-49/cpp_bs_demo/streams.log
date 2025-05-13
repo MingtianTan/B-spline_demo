@@ -1,0 +1,48 @@
+[0.006s] Invoking command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo': AMENT_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8
+[0.027s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.188s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.201s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.206s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.211s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.218s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.252s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.253s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.296s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.331s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.338s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.347s] -- Found cpp_bs_demo_interfaces: 0.0.0 (/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/share/cpp_bs_demo_interfaces/cmake)
+[0.359s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.413s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.413s] -- Configured cppcheck include dirs: 
+[0.413s] -- Configured cppcheck exclude dirs and/or files: 
+[0.413s] -- Added test 'lint_cmake' to check CMake code style
+[0.414s] -- Added test 'uncrustify' to check C / C++ code style
+[0.414s] -- Configured uncrustify additional arguments: 
+[0.414s] -- Added test 'xmllint' to check XML markup files
+[0.415s] -- Configuring done (0.4s)
+[0.420s] -- Generating done (0.0s)
+[0.422s] -- Build files have been written to: /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo
+[0.453s] [ 50%] [32mBuilding CXX object CMakeFiles/point_generator.dir/src/publisher.cpp.o[0m
+[2.583s] [100%] [32m[1mLinking CXX executable point_generator[0m
+[2.682s] [100%] Built target point_generator
+[2.691s] Invoked command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo' returned '0': AMENT_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8
+[2.692s] Invoking command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo': AMENT_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo
+[2.696s] -- Install configuration: ""
+[2.696s] -- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/lib/cpp_bs_demo/point_generator
+[2.697s] -- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/lib/cpp_bs_demo/point_generator" to ""
+[2.697s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/package_run_dependencies/cpp_bs_demo
+[2.697s] -- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/parent_prefix_path/cpp_bs_demo
+[2.697s] -- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.sh
+[2.697s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.dsv
+[2.697s] -- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.sh
+[2.697s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.dsv
+[2.697s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.bash
+[2.697s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.sh
+[2.697s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.zsh
+[2.698s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.dsv
+[2.698s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/package.dsv
+[2.698s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/packages/cpp_bs_demo
+[2.698s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig.cmake
+[2.698s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig-version.cmake
+[2.698s] -- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/package.xml
+[2.698s] Invoked command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo' returned '0': AMENT_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo

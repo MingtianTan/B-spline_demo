@@ -1,1 +1,1 @@
-rclcpp;std_msgs;geometry_msgs;builtin_interfaces;cpp_bs_demo_interfaces;ament_lint_auto;ament_lint_common
+rclcpp;std_msgs;geometry_msgs;builtin_interfaces;cpp_bs_demo_interfaces;robot_state_publisher;nav_msgs;visualization_msgs;ament_lint_auto;ament_lint_common

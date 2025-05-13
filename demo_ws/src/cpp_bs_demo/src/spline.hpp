@@ -110,7 +110,7 @@ class Bspline{
                 throw std::runtime_error("u size does not match m_ + 1.");
             }
             u_ = Eigen::VectorXd::Zero(expected_u); //VecttorXd is dynamic vector
-            for (int i = 0; i < expected_u; ++i) {
+            for (size_t i = 0; i < expected_u; ++i) {
                 u_(i) = msg->u[i];
             }
     

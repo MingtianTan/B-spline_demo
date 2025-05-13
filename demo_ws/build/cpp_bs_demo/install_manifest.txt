@@ -1,4 +1,7 @@
 /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/lib/cpp_bs_demo/point_generator
+/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/urdf/ball_obstacle.urdf
+/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/launch/bs_demo.launch.py
+/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/rviz/demo.rviz
 /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/package_run_dependencies/cpp_bs_demo
 /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/parent_prefix_path/cpp_bs_demo
 /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.sh

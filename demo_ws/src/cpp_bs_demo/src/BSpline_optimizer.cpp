@@ -1,7 +1,7 @@
-#include "planner_algorithm/BSpline_optimizer.hpp"
+#include "BSpline_optimizer.hpp"
 #include <cassert>
 #include <assert.h>
-#include "utils/lbfgs.hpp"
+#include "lbfgs.hpp"
 #include <omp.h>
 
 /// @brief 全局调用初始化时
