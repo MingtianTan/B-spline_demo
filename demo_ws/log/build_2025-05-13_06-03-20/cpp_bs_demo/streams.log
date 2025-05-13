@@ -1,0 +1,25 @@
+[0.008s] Invoking command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo': CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/install/cpp_bs_demo:/home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:/home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:/home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8
+[0.045s] [ 50%] [32mBuilding CXX object CMakeFiles/point_generator.dir/src/publisher.cpp.o[0m
+[1.848s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.848s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[1.848s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[1.848s]                  from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/spline.hpp:17[m[K,
+[1.848s]                  from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:4[m[K:
+[1.848s] [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:[m[K In static member function ‘[01m[Kstatic double TrajOptimizer::[01;32m[Kevaluate[m[K(void*, const Eigen::VectorXd&, Eigen::VectorXd&)[m[K’:
+[1.848s] [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:112:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KTrajOptimizer::nh_[m[K’ in static member function
+[1.848s]   112 |     RCLCPP_INFO([01;31m[Knh_[m[K->get_logger(), "%s", ss.str().c_str());
+[1.848s]       |                 [01;31m[K^~~[m[K
+[1.848s] In file included from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:5[m[K:
+[1.848s] [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:23:29:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.848s]    23 |     rclcpp::Node::SharedPtr [01;36m[Knh_[m[K;
+[1.848s]       |                             [01;36m[K^~~[m[K
+[1.848s] [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:112:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KTrajOptimizer::nh_[m[K’ in static member function
+[1.848s]   112 |     RCLCPP_INFO([01;31m[Knh_[m[K->get_logger(), "%s", ss.str().c_str());
+[1.848s]       |                 [01;31m[K^~~[m[K
+[1.849s] [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:23:29:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.849s]    23 |     rclcpp::Node::SharedPtr [01;36m[Knh_[m[K;
+[1.849s]       |                             [01;36m[K^~~[m[K
+[2.866s] gmake[2]: *** [CMakeFiles/point_generator.dir/build.make:76: CMakeFiles/point_generator.dir/src/publisher.cpp.o] Error 1
+[2.866s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/point_generator.dir/all] Error 2
+[2.866s] gmake: *** [Makefile:146: all] Error 2
+[2.868s] Invoked command in '/home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo' returned '2': CMAKE_PREFIX_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/install/cpp_bs_demo:/home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces:/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib:/home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:/home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/teemty/B-spline-demo/demo_ws/build/cpp_bs_demo -- -j8 -l8

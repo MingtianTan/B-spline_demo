@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-43be2d523d30f5f8a25b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "cpp_bs_demo_interfaces__py",
+					"jsonFile" : "directory-cpp_bs_demo_interfaces__py-ab5bf2aa56fbe8d83e3e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/teemty/B-spline-demo/build/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "cpp_bs_demo_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_cpp_bs_demo_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_cpp_bs_demo_interfaces_egg-b08154a3140b7642004a.json",
+					"name" : "ament_cmake_python_build_cpp_bs_demo_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_cpp_bs_demo_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_cpp_bs_demo_interfaces-398e5a291fe72aca860c.json",
+					"name" : "ament_cmake_python_copy_cpp_bs_demo_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces-2889600093a281c20ba2.json",
+					"name" : "cpp_bs_demo_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__cpp-e6563064d70609cfa06c.json",
+					"name" : "cpp_bs_demo_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cpp_bs_demo_interfaces__py::@478235850471561dd1a7",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__py-2cf3448390ef496ec51d.json",
+					"name" : "cpp_bs_demo_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_generator_c-1f9df3e6f9b22dc73998.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_generator_py-a7d78935f182bf1c6b51.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_generator_type_description-f3ace58af5f421601455.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_typesupport_c-d891611788c6ecdf0853.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_typesupport_cpp-1bd9a51bac2493c6e0c8.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c-681b2d7a5ff5b92feca6.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp-a553ddba34dbdce9f8be.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_typesupport_introspection_c-4783bf2ec2cba90157b3.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp-3615207cdc8bfb56c693.json",
+					"name" : "cpp_bs_demo_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces_s__rosidl_typesupport_c-be5010b990a44f7cb9e2.json",
+					"name" : "cpp_bs_demo_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c-3f1bfb61da23fa29c2b3.json",
+					"name" : "cpp_bs_demo_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c-98ddfe79e529f100956c.json",
+					"name" : "cpp_bs_demo_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_bs_demo_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_bs_demo_interfaces_uninstall-8130954b3711fd3ef75c.json",
+					"name" : "cpp_bs_demo_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-381e8944a50f72c9b914.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/teemty/B-spline-demo/build/cpp_bs_demo_interfaces",
+		"source" : "/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

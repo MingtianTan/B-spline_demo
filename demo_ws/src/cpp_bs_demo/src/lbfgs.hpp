@@ -1,3 +1,8 @@
+// This file was made by previous author @FASTLAB
+// Teemty did not modify it.
+// 05/13/2025
+//
+
 #include <Eigen/Eigen>
 #include <cmath>
 #include <algorithm>

@@ -1,7 +1,6 @@
 CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13/chrono \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h /usr/include/c++/13/functional \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,41 +11,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/bits/chrono.h \
- /usr/include/c++/13/ratio /usr/include/c++/13/type_traits \
- /usr/include/c++/13/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/limits /usr/include/c++/13/ctime /usr/include/time.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/c++/13/ext/numeric_traits.h \
- /usr/include/c++/13/bits/cpp_type_traits.h \
- /usr/include/c++/13/ext/type_traits.h /usr/include/c++/13/functional \
+ /usr/include/c++/13/pstl/pstl_config.h \
  /usr/include/c++/13/bits/stl_function.h /usr/include/c++/13/bits/move.h \
- /usr/include/c++/13/backward/binders.h /usr/include/c++/13/tuple \
- /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/bits/utility.h \
+ /usr/include/c++/13/type_traits /usr/include/c++/13/backward/binders.h \
+ /usr/include/c++/13/tuple /usr/include/c++/13/bits/stl_pair.h \
+ /usr/include/c++/13/bits/utility.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/invoke.h \
  /usr/include/c++/13/bits/functional_hash.h \
@@ -55,11 +24,16 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/c++/13/bits/exception.h /usr/include/c++/13/typeinfo \
  /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/exception_defines.h \
- /usr/include/c++/13/unordered_map /usr/include/c++/13/initializer_list \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/c++/13/initializer_list \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/bits/stl_algobase.h \
+ /usr/include/c++/13/bits/cpp_type_traits.h \
+ /usr/include/c++/13/ext/type_traits.h \
+ /usr/include/c++/13/ext/numeric_traits.h \
  /usr/include/c++/13/bits/stl_iterator_base_types.h \
  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/13/bits/concept_check.h \
@@ -80,6 +54,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/erase_if.h \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator_args.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
@@ -90,17 +65,33 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/cstdlib \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -110,7 +101,12 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/align.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/stringfwd.h /usr/include/c++/13/bits/postypes.h \
  /usr/include/c++/13/cwchar /usr/include/wchar.h \
@@ -128,7 +124,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
@@ -166,6 +166,299 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
+ /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/spline.hpp \
+ /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
+ /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/iostream \
+ /usr/include/c++/13/ostream /usr/include/c++/13/ios \
+ /usr/include/c++/13/bits/ios_base.h \
+ /usr/include/c++/13/bits/locale_classes.h \
+ /usr/include/c++/13/bits/locale_classes.tcc \
+ /usr/include/c++/13/system_error \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+ /usr/include/c++/13/stdexcept /usr/include/c++/13/streambuf \
+ /usr/include/c++/13/bits/streambuf.tcc \
+ /usr/include/c++/13/bits/basic_ios.h \
+ /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+ /usr/include/c++/13/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+ /usr/include/c++/13/bits/locale_facets.tcc \
+ /usr/include/c++/13/bits/basic_ios.tcc \
+ /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
+ /usr/include/c++/13/bits/istream.tcc /usr/local/include/Eigen/Dense \
+ /usr/local/include/Eigen/Core \
+ /usr/local/include/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /usr/local/include/Eigen/src/Core/util/Macros.h \
+ /usr/local/include/Eigen/src/Core/util/ConfigureVectorization.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
+ /usr/include/c++/13/stdlib.h /usr/include/c++/13/complex \
+ /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
+ /usr/local/include/Eigen/src/Core/util/MKL_support.h \
+ /usr/include/c++/13/cassert /usr/include/assert.h \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/13/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/local/include/Eigen/src/Core/util/Constants.h \
+ /usr/local/include/Eigen/src/Core/util/Meta.h \
+ /usr/include/c++/13/cstdint \
+ /usr/local/include/Eigen/src/Core/util/ForwardDeclarations.h \
+ /usr/local/include/Eigen/src/Core/util/StaticAssert.h \
+ /usr/local/include/Eigen/src/Core/util/XprHelper.h \
+ /usr/local/include/Eigen/src/Core/util/Memory.h \
+ /usr/local/include/Eigen/src/Core/util/IntegralConstant.h \
+ /usr/local/include/Eigen/src/Core/util/SymbolicIndex.h \
+ /usr/local/include/Eigen/src/Core/NumTraits.h \
+ /usr/local/include/Eigen/src/Core/MathFunctions.h \
+ /usr/local/include/Eigen/src/Core/GenericPacketMath.h \
+ /usr/local/include/Eigen/src/Core/MathFunctionsImpl.h \
+ /usr/local/include/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /usr/local/include/Eigen/src/Core/arch/Default/Half.h \
+ /usr/local/include/Eigen/src/Core/arch/Default/BFloat16.h \
+ /usr/local/include/Eigen/src/Core/arch/Default/TypeCasting.h \
+ /usr/local/include/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+ /usr/local/include/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /usr/local/include/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /usr/local/include/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /usr/local/include/Eigen/src/Core/arch/SSE/Complex.h \
+ /usr/local/include/Eigen/src/Core/arch/Default/Settings.h \
+ /usr/local/include/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+ /usr/local/include/Eigen/src/Core/functors/TernaryFunctors.h \
+ /usr/local/include/Eigen/src/Core/functors/BinaryFunctors.h \
+ /usr/local/include/Eigen/src/Core/functors/UnaryFunctors.h \
+ /usr/local/include/Eigen/src/Core/functors/NullaryFunctors.h \
+ /usr/local/include/Eigen/src/Core/functors/StlFunctors.h \
+ /usr/local/include/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /usr/local/include/Eigen/src/Core/util/IndexedViewHelper.h \
+ /usr/local/include/Eigen/src/Core/util/ReshapedHelper.h \
+ /usr/local/include/Eigen/src/Core/ArithmeticSequence.h \
+ /usr/local/include/Eigen/src/Core/IO.h \
+ /usr/local/include/Eigen/src/Core/DenseCoeffsBase.h \
+ /usr/local/include/Eigen/src/Core/DenseBase.h \
+ /usr/local/include/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/local/include/Eigen/src/plugins/BlockMethods.h \
+ /usr/local/include/Eigen/src/plugins/IndexedViewMethods.h \
+ /usr/local/include/Eigen/src/plugins/IndexedViewMethods.h \
+ /usr/local/include/Eigen/src/plugins/ReshapedMethods.h \
+ /usr/local/include/Eigen/src/plugins/ReshapedMethods.h \
+ /usr/local/include/Eigen/src/Core/MatrixBase.h \
+ /usr/local/include/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/local/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/local/include/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+ /usr/local/include/Eigen/src/Core/EigenBase.h \
+ /usr/local/include/Eigen/src/Core/Product.h \
+ /usr/local/include/Eigen/src/Core/CoreEvaluators.h \
+ /usr/local/include/Eigen/src/Core/AssignEvaluator.h \
+ /usr/local/include/Eigen/src/Core/Assign.h \
+ /usr/local/include/Eigen/src/Core/ArrayBase.h \
+ /usr/local/include/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+ /usr/local/include/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+ /usr/local/include/Eigen/src/Core/util/BlasUtil.h \
+ /usr/local/include/Eigen/src/Core/DenseStorage.h \
+ /usr/local/include/Eigen/src/Core/NestByValue.h \
+ /usr/local/include/Eigen/src/Core/ReturnByValue.h \
+ /usr/local/include/Eigen/src/Core/NoAlias.h \
+ /usr/local/include/Eigen/src/Core/PlainObjectBase.h \
+ /usr/local/include/Eigen/src/Core/Matrix.h \
+ /usr/local/include/Eigen/src/Core/Array.h \
+ /usr/local/include/Eigen/src/Core/CwiseTernaryOp.h \
+ /usr/local/include/Eigen/src/Core/CwiseBinaryOp.h \
+ /usr/local/include/Eigen/src/Core/CwiseUnaryOp.h \
+ /usr/local/include/Eigen/src/Core/CwiseNullaryOp.h \
+ /usr/local/include/Eigen/src/Core/CwiseUnaryView.h \
+ /usr/local/include/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /usr/local/include/Eigen/src/Core/Dot.h \
+ /usr/local/include/Eigen/src/Core/StableNorm.h \
+ /usr/local/include/Eigen/src/Core/Stride.h \
+ /usr/local/include/Eigen/src/Core/MapBase.h \
+ /usr/local/include/Eigen/src/Core/Map.h \
+ /usr/local/include/Eigen/src/Core/Ref.h \
+ /usr/local/include/Eigen/src/Core/Block.h \
+ /usr/local/include/Eigen/src/Core/VectorBlock.h \
+ /usr/local/include/Eigen/src/Core/IndexedView.h \
+ /usr/local/include/Eigen/src/Core/Reshaped.h \
+ /usr/local/include/Eigen/src/Core/Transpose.h \
+ /usr/local/include/Eigen/src/Core/DiagonalMatrix.h \
+ /usr/local/include/Eigen/src/Core/Diagonal.h \
+ /usr/local/include/Eigen/src/Core/DiagonalProduct.h \
+ /usr/local/include/Eigen/src/Core/Redux.h \
+ /usr/local/include/Eigen/src/Core/Visitor.h \
+ /usr/local/include/Eigen/src/Core/Fuzzy.h \
+ /usr/local/include/Eigen/src/Core/Swap.h \
+ /usr/local/include/Eigen/src/Core/CommaInitializer.h \
+ /usr/local/include/Eigen/src/Core/GeneralProduct.h \
+ /usr/local/include/Eigen/src/Core/Solve.h \
+ /usr/local/include/Eigen/src/Core/Inverse.h \
+ /usr/local/include/Eigen/src/Core/SolverBase.h \
+ /usr/local/include/Eigen/src/Core/PermutationMatrix.h \
+ /usr/local/include/Eigen/src/Core/Transpositions.h \
+ /usr/local/include/Eigen/src/Core/TriangularMatrix.h \
+ /usr/local/include/Eigen/src/Core/SelfAdjointView.h \
+ /usr/local/include/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /usr/local/include/Eigen/src/Core/products/Parallelizer.h \
+ /usr/include/c++/13/atomic \
+ /usr/local/include/Eigen/src/Core/ProductEvaluators.h \
+ /usr/local/include/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /usr/local/include/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /usr/local/include/Eigen/src/Core/SolveTriangular.h \
+ /usr/local/include/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /usr/local/include/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /usr/local/include/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /usr/local/include/Eigen/src/Core/products/SelfadjointProduct.h \
+ /usr/local/include/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /usr/local/include/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /usr/local/include/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /usr/local/include/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /usr/local/include/Eigen/src/Core/products/TriangularSolverVector.h \
+ /usr/local/include/Eigen/src/Core/BandMatrix.h \
+ /usr/local/include/Eigen/src/Core/CoreIterators.h \
+ /usr/local/include/Eigen/src/Core/ConditionEstimator.h \
+ /usr/local/include/Eigen/src/Core/BooleanRedux.h \
+ /usr/local/include/Eigen/src/Core/Select.h \
+ /usr/local/include/Eigen/src/Core/VectorwiseOp.h \
+ /usr/local/include/Eigen/src/Core/PartialReduxEvaluator.h \
+ /usr/local/include/Eigen/src/Core/Random.h \
+ /usr/local/include/Eigen/src/Core/Replicate.h \
+ /usr/local/include/Eigen/src/Core/Reverse.h \
+ /usr/local/include/Eigen/src/Core/ArrayWrapper.h \
+ /usr/local/include/Eigen/src/Core/StlIterators.h \
+ /usr/local/include/Eigen/src/Core/GlobalFunctions.h \
+ /usr/local/include/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /usr/local/include/Eigen/LU /usr/local/include/Eigen/src/misc/Kernel.h \
+ /usr/local/include/Eigen/src/misc/Image.h \
+ /usr/local/include/Eigen/src/LU/FullPivLU.h \
+ /usr/local/include/Eigen/src/LU/PartialPivLU.h \
+ /usr/local/include/Eigen/src/LU/Determinant.h \
+ /usr/local/include/Eigen/src/LU/InverseImpl.h \
+ /usr/local/include/Eigen/src/LU/arch/InverseSize4.h \
+ /usr/local/include/Eigen/Cholesky /usr/local/include/Eigen/Jacobi \
+ /usr/local/include/Eigen/src/Jacobi/Jacobi.h \
+ /usr/local/include/Eigen/src/Cholesky/LLT.h \
+ /usr/local/include/Eigen/src/Cholesky/LDLT.h /usr/local/include/Eigen/QR \
+ /usr/local/include/Eigen/Householder \
+ /usr/local/include/Eigen/src/Householder/Householder.h \
+ /usr/local/include/Eigen/src/Householder/HouseholderSequence.h \
+ /usr/local/include/Eigen/src/Householder/BlockHouseholder.h \
+ /usr/local/include/Eigen/src/QR/HouseholderQR.h \
+ /usr/local/include/Eigen/src/QR/FullPivHouseholderQR.h \
+ /usr/local/include/Eigen/src/QR/ColPivHouseholderQR.h \
+ /usr/local/include/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /usr/local/include/Eigen/SVD \
+ /usr/local/include/Eigen/src/misc/RealSvd2x2.h \
+ /usr/local/include/Eigen/src/SVD/UpperBidiagonalization.h \
+ /usr/local/include/Eigen/src/SVD/SVDBase.h \
+ /usr/local/include/Eigen/src/SVD/JacobiSVD.h \
+ /usr/local/include/Eigen/src/SVD/BDCSVD.h \
+ /usr/local/include/Eigen/Geometry \
+ /usr/local/include/Eigen/src/Geometry/OrthoMethods.h \
+ /usr/local/include/Eigen/src/Geometry/EulerAngles.h \
+ /usr/local/include/Eigen/src/Geometry/Homogeneous.h \
+ /usr/local/include/Eigen/src/Geometry/RotationBase.h \
+ /usr/local/include/Eigen/src/Geometry/Rotation2D.h \
+ /usr/local/include/Eigen/src/Geometry/Quaternion.h \
+ /usr/local/include/Eigen/src/Geometry/AngleAxis.h \
+ /usr/local/include/Eigen/src/Geometry/Transform.h \
+ /usr/local/include/Eigen/src/Geometry/Translation.h \
+ /usr/local/include/Eigen/src/Geometry/Scaling.h \
+ /usr/local/include/Eigen/src/Geometry/Hyperplane.h \
+ /usr/local/include/Eigen/src/Geometry/ParametrizedLine.h \
+ /usr/local/include/Eigen/src/Geometry/AlignedBox.h \
+ /usr/local/include/Eigen/src/Geometry/Umeyama.h \
+ /usr/local/include/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+ /usr/local/include/Eigen/Eigenvalues \
+ /usr/local/include/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/local/include/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/local/include/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/local/include/Eigen/src/Eigenvalues/EigenSolver.h \
+ /usr/local/include/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/local/include/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /usr/local/include/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/local/include/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /usr/local/include/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/local/include/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/local/include/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /usr/local/include/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/local/include/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/local/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /usr/local/include/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/local/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/trajectory.hpp \
+ /home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__struct.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+ /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+ /home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__builder.hpp \
+ /home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__traits.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
+ /usr/include/c++/13/codecvt /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13/bits/locale_conv.h \
+ /usr/include/c++/13/bits/quoted_string.h \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+ /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+ /home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.hpp \
+ /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+ /home/teemty/B-spline-demo/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/allocator.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/macros.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/13/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -199,72 +492,16 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
- /usr/include/c++/13/algorithm \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
- /usr/include/c++/13/stdexcept /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h \
- /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
- /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
- /usr/include/c++/13/sstream /usr/include/c++/13/istream \
- /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
- /usr/include/c++/13/bits/locale_classes.h \
- /usr/include/c++/13/bits/locale_classes.tcc \
- /usr/include/c++/13/system_error \
- /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
- /usr/include/c++/13/streambuf /usr/include/c++/13/bits/streambuf.tcc \
- /usr/include/c++/13/bits/basic_ios.h \
- /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
- /usr/include/c++/13/bits/streambuf_iterator.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
- /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
- /usr/include/c++/13/bits/ostream.tcc \
- /usr/include/c++/13/bits/istream.tcc \
- /usr/include/c++/13/bits/sstream.tcc \
- /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
- /usr/include/c++/13/codecvt /usr/include/c++/13/bits/codecvt.h \
- /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
- /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp \
- /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
- /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
- /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
- /opt/ros/jazzy/include/rcutils/rcutils/allocator.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /opt/ros/jazzy/include/rcutils/rcutils/macros.h \
- /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h \
- /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h \
- /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h \
- /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -280,7 +517,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp \
- /usr/include/c++/13/iostream \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp \
@@ -292,7 +528,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp \
  /opt/ros/jazzy/include/rcl/rcl/error_handling.h \
  /opt/ros/jazzy/include/rcutils/rcutils/error_handling.h \
- /usr/include/assert.h /usr/include/c++/13/stdlib.h \
  /opt/ros/jazzy/include/rcutils/rcutils/snprintf.h \
  /opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h \
  /opt/ros/jazzy/include/rcl/rcl/types.h \
@@ -374,6 +609,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp \
  /opt/ros/jazzy/include/rcutils/rcutils/logging_macros.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp \
+ /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/bits/parse_numbers.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/std_mutex.h \
@@ -413,16 +650,16 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp \
  /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
- /usr/include/c++/13/atomic /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/std_thread.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
  /usr/include/c++/13/set /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp \
- /usr/include/c++/13/cassert /usr/include/c++/13/list \
- /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
- /usr/include/c++/13/map /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/list /usr/include/c++/13/bits/stl_list.h \
+ /usr/include/c++/13/bits/list.tcc /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_notify_waitable.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp \
@@ -534,28 +771,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
- /usr/include/c++/13/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp \
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -682,9 +897,113 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_map.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/path.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/marker.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/marker__builder.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.hpp \
+ /opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
+ /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/lbfgs.hpp \
+ /usr/local/include/Eigen/Eigen /usr/local/include/Eigen/Dense \
+ /usr/local/include/Eigen/Sparse /usr/local/include/Eigen/SparseCore \
+ /usr/local/include/Eigen/src/SparseCore/SparseUtil.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseMatrixBase.h \
+ /usr/local/include/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/local/include/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/local/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/local/include/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+ /usr/local/include/Eigen/src/plugins/BlockMethods.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseAssign.h \
+ /usr/local/include/Eigen/src/SparseCore/CompressedStorage.h \
+ /usr/local/include/Eigen/src/SparseCore/AmbiVector.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseCompressedBase.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseMatrix.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseMap.h \
+ /usr/local/include/Eigen/src/SparseCore/MappedSparseMatrix.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseVector.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseRef.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseCwiseUnaryOp.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseTranspose.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseBlock.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseDot.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseRedux.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseView.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseDiagonalProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseSparseProductWithPruning.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseDenseProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseSelfAdjointView.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseTriangularView.h \
+ /usr/local/include/Eigen/src/SparseCore/TriangularSolver.h \
+ /usr/local/include/Eigen/src/SparseCore/SparsePermutation.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseFuzzy.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseSolverBase.h \
+ /usr/local/include/Eigen/OrderingMethods \
+ /usr/local/include/Eigen/src/OrderingMethods/Amd.h \
+ /usr/local/include/Eigen/src/OrderingMethods/Ordering.h \
+ /usr/local/include/Eigen/src/OrderingMethods/Eigen_Colamd.h \
+ /usr/local/include/Eigen/SparseCholesky \
+ /usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky.h \
+ /usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h \
+ /usr/local/include/Eigen/SparseLU \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_gemm_kernel.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_Structs.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLUImpl.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseColEtree.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_Memory.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_relax_snode.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_pivotL.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_panel_dfs.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_kernel_bmod.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_panel_bmod.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_column_dfs.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_column_bmod.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_pruneL.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_Utils.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU.h \
+ /usr/local/include/Eigen/SparseQR \
+ /usr/local/include/Eigen/src/SparseQR/SparseQR.h \
+ /usr/local/include/Eigen/IterativeLinearSolvers \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h

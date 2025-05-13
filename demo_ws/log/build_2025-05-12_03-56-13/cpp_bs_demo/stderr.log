@@ -1,5 +1,0 @@
-In file included from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:6[m[K:
-[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/spline.hpp:[m[K In constructor ‘[01m[KBspline::[01;32m[KBspline[m[K(const std::shared_ptr<const cpp_bs_demo_interfaces::msg::Trajectory_<std::allocator<void> > >&)[m[K’:
-[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/spline.hpp:113:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
-  113 |             for (int i = 0; [01;35m[Ki < expected_u[m[K; ++i) {
-      |                             [01;35m[K~~^~~~~~~~~~~~[m[K

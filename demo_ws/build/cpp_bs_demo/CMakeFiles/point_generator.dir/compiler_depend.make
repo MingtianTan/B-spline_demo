@@ -8,6 +8,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
   /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.hpp \
   /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/trajectory.hpp \
+  /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/lbfgs.hpp \
+  /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp \
   /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/spline.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
@@ -21,8 +23,10 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
@@ -33,6 +37,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
@@ -423,12 +428,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
-  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
-  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
   /opt/ros/jazzy/include/tracetools/tracetools/config.h \
   /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h \
   /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp \
@@ -822,13 +821,21 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
   /usr/local/include/Eigen/Cholesky \
   /usr/local/include/Eigen/Core \
   /usr/local/include/Eigen/Dense \
+  /usr/local/include/Eigen/Eigen \
   /usr/local/include/Eigen/Eigenvalues \
   /usr/local/include/Eigen/Geometry \
   /usr/local/include/Eigen/Householder \
+  /usr/local/include/Eigen/IterativeLinearSolvers \
   /usr/local/include/Eigen/Jacobi \
   /usr/local/include/Eigen/LU \
+  /usr/local/include/Eigen/OrderingMethods \
   /usr/local/include/Eigen/QR \
   /usr/local/include/Eigen/SVD \
+  /usr/local/include/Eigen/Sparse \
+  /usr/local/include/Eigen/SparseCholesky \
+  /usr/local/include/Eigen/SparseCore \
+  /usr/local/include/Eigen/SparseLU \
+  /usr/local/include/Eigen/SparseQR \
   /usr/local/include/Eigen/src/Cholesky/LDLT.h \
   /usr/local/include/Eigen/src/Cholesky/LLT.h \
   /usr/local/include/Eigen/src/Core/ArithmeticSequence.h \
@@ -976,12 +983,23 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
   /usr/local/include/Eigen/src/Householder/BlockHouseholder.h \
   /usr/local/include/Eigen/src/Householder/Householder.h \
   /usr/local/include/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h \
+  /usr/local/include/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h \
   /usr/local/include/Eigen/src/Jacobi/Jacobi.h \
   /usr/local/include/Eigen/src/LU/Determinant.h \
   /usr/local/include/Eigen/src/LU/FullPivLU.h \
   /usr/local/include/Eigen/src/LU/InverseImpl.h \
   /usr/local/include/Eigen/src/LU/PartialPivLU.h \
   /usr/local/include/Eigen/src/LU/arch/InverseSize4.h \
+  /usr/local/include/Eigen/src/OrderingMethods/Amd.h \
+  /usr/local/include/Eigen/src/OrderingMethods/Eigen_Colamd.h \
+  /usr/local/include/Eigen/src/OrderingMethods/Ordering.h \
   /usr/local/include/Eigen/src/QR/ColPivHouseholderQR.h \
   /usr/local/include/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
   /usr/local/include/Eigen/src/QR/FullPivHouseholderQR.h \
@@ -990,6 +1008,56 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
   /usr/local/include/Eigen/src/SVD/JacobiSVD.h \
   /usr/local/include/Eigen/src/SVD/SVDBase.h \
   /usr/local/include/Eigen/src/SVD/UpperBidiagonalization.h \
+  /usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky.h \
+  /usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h \
+  /usr/local/include/Eigen/src/SparseCore/AmbiVector.h \
+  /usr/local/include/Eigen/src/SparseCore/CompressedStorage.h \
+  /usr/local/include/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h \
+  /usr/local/include/Eigen/src/SparseCore/MappedSparseMatrix.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseAssign.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseBlock.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseColEtree.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseCompressedBase.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseCwiseUnaryOp.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseDenseProduct.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseDiagonalProduct.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseDot.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseFuzzy.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseMap.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseMatrix.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseMatrixBase.h \
+  /usr/local/include/Eigen/src/SparseCore/SparsePermutation.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseProduct.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseRedux.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseRef.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseSelfAdjointView.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseSolverBase.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseSparseProductWithPruning.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseTranspose.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseTriangularView.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseUtil.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseVector.h \
+  /usr/local/include/Eigen/src/SparseCore/SparseView.h \
+  /usr/local/include/Eigen/src/SparseCore/TriangularSolver.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLUImpl.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_Memory.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_Structs.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_Utils.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_column_bmod.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_column_dfs.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_gemm_kernel.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_kernel_bmod.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_panel_bmod.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_panel_dfs.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_pivotL.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_pruneL.h \
+  /usr/local/include/Eigen/src/SparseLU/SparseLU_relax_snode.h \
+  /usr/local/include/Eigen/src/SparseQR/SparseQR.h \
   /usr/local/include/Eigen/src/misc/Image.h \
   /usr/local/include/Eigen/src/misc/Kernel.h \
   /usr/local/include/Eigen/src/misc/RealSvd2x2.h \
@@ -1018,11 +1086,55 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/local/include/Eigen/src/misc/Image.h:
 
+/usr/local/include/Eigen/src/SparseLU/SparseLU_pruneL.h:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_panel_bmod.h:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_Utils.h:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseSparseProductWithPruning.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseRedux.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseProduct.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparsePermutation.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseMatrixBase.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseMap.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseDot.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseDenseProduct.h:
+
+/usr/local/include/Eigen/src/SparseCore/MappedSparseMatrix.h:
+
+/usr/local/include/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h:
+
+/usr/local/include/Eigen/src/SparseCore/AmbiVector.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseVector.h:
+
+/usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h:
+
 /usr/local/include/Eigen/src/QR/ColPivHouseholderQR.h:
+
+/usr/local/include/Eigen/src/OrderingMethods/Ordering.h:
 
 /usr/local/include/Eigen/src/LU/Determinant.h:
 
 /usr/local/include/Eigen/src/Jacobi/Jacobi.h:
+
+/usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h:
+
+/usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h:
+
+/usr/local/include/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h:
+
+/usr/local/include/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h:
 
 /usr/local/include/Eigen/src/Householder/HouseholderSequence.h:
 
@@ -1051,6 +1163,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/local/include/Eigen/src/Eigenvalues/RealQZ.h:
 
 /usr/local/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU.h:
 
 /usr/local/include/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
 
@@ -1112,7 +1226,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/local/include/Eigen/src/Core/StableNorm.h:
 
+/usr/local/include/Eigen/src/SparseQR/SparseQR.h:
+
 /usr/local/include/Eigen/src/Core/SolveTriangular.h:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_gemm_kernel.h:
 
 /usr/local/include/Eigen/src/Core/Select.h:
 
@@ -1128,10 +1246,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/local/include/Eigen/src/Core/NoAlias.h:
 
-/usr/local/include/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
-
-/usr/local/include/Eigen/src/Core/NestByValue.h:
-
 /usr/local/include/Eigen/src/Core/MatrixBase.h:
 
 /usr/local/include/Eigen/src/Core/Matrix.h:
@@ -1145,6 +1259,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/local/include/Eigen/src/Core/EigenBase.h:
 
 /usr/local/include/Eigen/src/Core/Diagonal.h:
+
+/usr/local/include/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h:
 
 /usr/local/include/Eigen/src/Core/DenseStorage.h:
 
@@ -1168,6 +1284,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/local/include/Eigen/src/Cholesky/LDLT.h:
 
+/usr/local/include/Eigen/SparseCore:
+
 /usr/local/include/Eigen/SVD:
 
 /usr/local/include/Eigen/QR:
@@ -1190,13 +1308,19 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
 
+/usr/local/include/Eigen/src/SparseCore/SparseDiagonalProduct.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdalign.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
+/usr/local/include/Eigen/src/SparseCore/SparseUtil.h:
+
 /usr/local/include/Eigen/src/Core/util/StaticAssert.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:
+
+/usr/local/include/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -1217,6 +1341,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseMatrix.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
@@ -1278,6 +1404,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
+/usr/local/include/Eigen/src/SparseLU/SparseLUImpl.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/local/include/Eigen/src/Core/GeneralProduct.h:
@@ -1302,7 +1430,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
+/usr/local/include/Eigen/SparseCholesky:
+
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/local/include/Eigen/src/OrderingMethods/Eigen_Colamd.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
@@ -1330,6 +1462,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
+/usr/local/include/Eigen/src/SparseCore/SparseFuzzy.h:
+
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -1346,6 +1480,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/wctype.h:
 
+/usr/local/include/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/wchar.h:
@@ -1361,6 +1497,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/local/include/Eigen/src/LU/arch/InverseSize4.h:
 
 /usr/local/include/Eigen/src/Core/products/Parallelizer.h:
+
+/usr/local/include/Eigen/SparseQR:
 
 /usr/include/stdio.h:
 
@@ -1450,6 +1588,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/c++/13/numeric:
 
+/usr/local/include/Eigen/src/SparseLU/SparseLU_kernel_bmod.h:
+
 /usr/local/include/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
 
 /usr/include/c++/13/new:
@@ -1502,6 +1642,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/c++/13/debug/assertions.h:
 
+/usr/local/include/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h:
+
 /usr/local/include/Eigen/src/Core/arch/Default/Settings.h:
 
 /usr/include/c++/13/cxxabi.h:
@@ -1511,6 +1653,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/c++/13/cwchar:
 
 /usr/include/c++/13/ctime:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_panel_dfs.h:
 
 /usr/local/include/Eigen/src/Core/GlobalFunctions.h:
 
@@ -1586,13 +1730,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/c++/13/bits/stl_multimap.h:
 
-/usr/local/include/Eigen/src/LU/PartialPivLU.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
+
+/usr/local/include/Eigen/src/SparseCore/TriangularSolver.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
@@ -1618,10 +1760,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
-/usr/local/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
-
 /usr/include/c++/13/streambuf:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
@@ -1640,6 +1778,12 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
+/usr/local/include/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/usr/local/include/Eigen/src/Core/NestByValue.h:
+
+/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/lbfgs.hpp:
+
 /opt/ros/jazzy/include/rcutils/rcutils/allocator.h:
 
 /opt/ros/jazzy/include/rmw/rmw/security_options.h:
@@ -1649,12 +1793,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/local/include/Eigen/src/Core/Solve.h:
 
 /usr/include/c++/13/bits/stl_deque.h:
-
-/usr/include/c++/13/codecvt:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_client.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
@@ -1680,11 +1818,15 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
+/usr/local/include/Eigen/src/SparseLU/SparseLU_Structs.h:
+
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
+
+/usr/local/include/Eigen/src/OrderingMethods/Amd.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
 
@@ -1698,7 +1840,13 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
+/usr/local/include/Eigen/OrderingMethods:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
+
+/usr/local/include/Eigen/src/SparseCore/SparseTranspose.h:
+
+/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
 
@@ -1737,6 +1885,10 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+
+/usr/local/include/Eigen/src/LU/PartialPivLU.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
@@ -1785,10 +1937,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/local/include/Eigen/src/Core/VectorwiseOp.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
 /usr/local/include/Eigen/src/Core/functors/NullaryFunctors.h:
 
@@ -1868,6 +2016,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
+/usr/local/include/Eigen/IterativeLinearSolvers:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
@@ -1878,53 +2028,25 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/visibility_control.hpp:
 
+/usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky.h:
+
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
 
-/opt/ros/jazzy/include/rcl/rcl/graph.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
 
-/usr/include/c++/13/bits/ostream.tcc:
+/usr/include/c++/13/bits/unordered_map.h:
 
-/usr/include/c++/13/tr1/gamma.tcc:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
 
-/usr/local/include/Eigen/Householder:
+/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/context.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
-
-/opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/marker__builder.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/event.h:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/local/include/Eigen/Eigenvalues:
-
-/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
-
-/usr/local/include/Eigen/src/Core/Swap.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/arguments.h:
-
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/13/deque:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+/usr/local/include/Eigen/SparseLU:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
 
@@ -1935,16 +2057,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/local/include/Eigen/src/Core/util/Macros.h:
 
 /opt/ros/jazzy/include/rcl/rcl/time.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
-
-/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp:
-
-/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
@@ -1958,9 +2070,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+/usr/local/include/Eigen/src/SparseLU/SparseLU_relax_snode.h:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
@@ -1980,6 +2090,16 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
+
+/usr/include/c++/13/codecvt:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_client.hpp:
+
 /usr/include/c++/13/cctype:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
@@ -1990,31 +2110,25 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
 
-/usr/include/c++/13/bits/uniform_int_dist.h:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
-/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp:
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
-/usr/local/include/Eigen/src/Core/BandMatrix.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:
 
-/usr/include/c++/13/bits/basic_string.h:
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
-/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_publisher.hpp:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
 
-/usr/include/c++/13/cstddef:
+/opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:
 
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+/usr/local/include/Eigen/src/SparseCore/SparseTriangularView.h:
 
-/usr/local/include/Eigen/src/Core/SelfAdjointView.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:
 
 /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo_interfaces/include/cpp_bs_demo_interfaces/cpp_bs_demo_interfaces/msg/detail/trajectory__type_support.hpp:
 
@@ -2022,13 +2136,69 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/c++/13/bits/stl_function.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:
+/usr/include/c++/13/tr1/gamma.tcc:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+
+/usr/local/include/Eigen/Householder:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/graph.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_column_bmod.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_publisher.hpp:
+
+/usr/local/include/Eigen/src/Core/SelfAdjointView.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
+
+/usr/local/include/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/path.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /opt/ros/jazzy/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
+
+/usr/local/include/Eigen/src/LU/FullPivLU.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
+
+/usr/local/include/Eigen/src/Core/Inverse.h:
+
+/usr/include/c++/13/bits/range_access.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -2041,6 +2211,34 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /opt/ros/jazzy/include/rcl/rcl/subscription.h:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
+
+/usr/local/include/Eigen/src/Core/Swap.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/arguments.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/usr/local/include/Eigen/Eigenvalues:
+
+/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/13/deque:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
 
 /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:
 
@@ -2066,25 +2264,9 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h:
 
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp:
-
 /opt/ros/jazzy/include/rcl/rcl/wait.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
-
-/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/usr/local/include/Eigen/src/Core/products/GeneralMatrixMatrix.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
+/usr/local/include/Eigen/src/SparseCore/SparseCwiseUnaryOp.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
 
@@ -2092,7 +2274,51 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/dynamic_message_type_support_struct.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
+
+/usr/include/c++/13/initializer_list:
+
+/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp:
+
+/usr/local/include/Eigen/src/Core/BandMatrix.h:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/c++/13/cstddef:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/context.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
+
+/opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/marker__builder.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
@@ -2103,6 +2329,10 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_column_dfs.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -2126,29 +2356,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:
+/usr/local/include/Eigen/src/SparseCore/CompressedStorage.h:
 
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+/opt/ros/jazzy/include/rcl/rcl/event.h:
 
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
-
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
-
-/usr/include/c++/13/initializer_list:
-
-/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
 
@@ -2168,9 +2380,9 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rmw/rmw/impl/config.h:
 
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
-
 /usr/include/c++/13/bits/ios_base.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -2199,16 +2411,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/c++/13/system_error:
 
 /usr/include/c++/13/bits/ostream_insert.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
-/usr/local/include/Eigen/src/LU/FullPivLU.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
-
-/usr/local/include/Eigen/src/Core/Inverse.h:
-
-/usr/include/c++/13/bits/range_access.h:
 
 /usr/local/include/Eigen/src/Core/MathFunctions.h:
 
@@ -2302,15 +2504,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
-
-/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/path.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+/usr/local/include/Eigen/src/SparseLU/SparseLU_Memory.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
@@ -2319,6 +2513,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/timers_manager.hpp:
+
+/usr/local/include/Eigen/src/SparseCore/SparseSelfAdjointView.h:
 
 /opt/ros/jazzy/include/rcl/rcl/error_handling.h:
 
@@ -2335,6 +2531,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_timer.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
+
+/usr/local/include/Eigen/src/SparseCore/SparseSolverBase.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
 
@@ -2360,23 +2558,17 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
-/usr/include/c++/13/bits/unordered_map.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
-
-/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/visibility_control.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
+
+/usr/include/c++/13/iostream:
+
+/usr/include/asm-generic/errno.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
 
@@ -2400,13 +2592,17 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/usr/include/c++/13/iostream:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp:
 
-/usr/include/asm-generic/errno.h:
+/usr/local/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
+
+/usr/local/include/Eigen/src/SparseCore/SparseAssign.h:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
 
@@ -2490,6 +2686,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
 
+/usr/local/include/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
@@ -2553,6 +2751,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /opt/ros/jazzy/include/rmw/rmw/qos_profiles.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/logging.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseView.h:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/uchar.h:
 
@@ -2632,9 +2832,9 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+/usr/local/include/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:
 
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/events_statuses.h:
 
@@ -2656,6 +2856,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
+/usr/local/include/Eigen/Sparse:
+
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:
@@ -2672,8 +2874,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rmw/rmw/impl/cpp/demangle.hpp:
 
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
-
 /opt/ros/jazzy/include/rmw/rmw/init.h:
 
 /opt/ros/jazzy/include/rmw/rmw/localhost.h:
@@ -2686,12 +2886,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rmw/rmw/message_sequence.h:
 
-/usr/include/c++/13/debug/debug.h:
-
-/usr/include/c++/13/bits/stl_list.h:
-
-/opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp:
-
 /opt/ros/jazzy/include/rmw/rmw/network_flow_endpoint.h:
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp:
@@ -2699,6 +2893,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/c++/13/bits/basic_ios.h:
 
 /opt/ros/jazzy/include/rmw/rmw/qos_string_conversions.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseCompressedBase.h:
 
 /opt/ros/jazzy/include/rmw/rmw/ret_types.h:
 
@@ -2729,12 +2925,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/c++/13/cstdio:
 
 /opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info_array.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
-
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_traits.hpp:
 
@@ -2796,6 +2986,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
 
+/usr/local/include/Eigen/src/SparseCore/SparseBlock.h:
+
 /usr/include/c++/13/bits/hashtable.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
@@ -2834,6 +3026,12 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/c++/13/bits/erase_if.h:
 
+/usr/include/c++/13/debug/debug.h:
+
+/opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp:
+
+/usr/include/c++/13/bits/stl_list.h:
+
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/alloca.h:
@@ -2859,8 +3057,6 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
-
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/config.h:
 
@@ -2928,6 +3124,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
+/usr/local/include/Eigen/Eigen:
+
 /usr/include/c++/13/variant:
 
 /usr/include/c++/13/bits/atomic_base.h:
@@ -2978,6 +3176,10 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 
 /usr/include/c++/13/bits/localefwd.h:
 
+/usr/local/include/Eigen/src/SparseCore/SparseRef.h:
+
+/usr/local/include/Eigen/src/SparseCore/SparseColEtree.h:
+
 /usr/include/c++/13/pstl/glue_memory_defs.h:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/matched.h:
@@ -2999,6 +3201,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: /home/teemty/B-spline-demo/d
 /usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/local/include/Eigen/src/SparseLU/SparseLU_pivotL.h:
 
 /usr/include/c++/13/bits/std_mutex.h:
 

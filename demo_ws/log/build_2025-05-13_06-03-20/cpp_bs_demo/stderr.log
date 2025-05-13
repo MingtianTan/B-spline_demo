@@ -1,0 +1,22 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/spline.hpp:17[m[K,
+                 from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:4[m[K:
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:[m[K In static member function ‘[01m[Kstatic double TrajOptimizer::[01;32m[Kevaluate[m[K(void*, const Eigen::VectorXd&, Eigen::VectorXd&)[m[K’:
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:112:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KTrajOptimizer::nh_[m[K’ in static member function
+  112 |     RCLCPP_INFO([01;31m[Knh_[m[K->get_logger(), "%s", ss.str().c_str());
+      |                 [01;31m[K^~~[m[K
+In file included from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:5[m[K:
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:23:29:[m[K [01;36m[Knote: [m[Kdeclared here
+   23 |     rclcpp::Node::SharedPtr [01;36m[Knh_[m[K;
+      |                             [01;36m[K^~~[m[K
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:112:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KTrajOptimizer::nh_[m[K’ in static member function
+  112 |     RCLCPP_INFO([01;31m[Knh_[m[K->get_logger(), "%s", ss.str().c_str());
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:23:29:[m[K [01;36m[Knote: [m[Kdeclared here
+   23 |     rclcpp::Node::SharedPtr [01;36m[Knh_[m[K;
+      |                             [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/point_generator.dir/build.make:76: CMakeFiles/point_generator.dir/src/publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/point_generator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,7 +1,6 @@
 CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13/chrono \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h /usr/include/c++/13/functional \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,41 +11,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/bits/chrono.h \
- /usr/include/c++/13/ratio /usr/include/c++/13/type_traits \
- /usr/include/c++/13/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/limits /usr/include/c++/13/ctime /usr/include/time.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/c++/13/ext/numeric_traits.h \
- /usr/include/c++/13/bits/cpp_type_traits.h \
- /usr/include/c++/13/ext/type_traits.h /usr/include/c++/13/functional \
+ /usr/include/c++/13/pstl/pstl_config.h \
  /usr/include/c++/13/bits/stl_function.h /usr/include/c++/13/bits/move.h \
- /usr/include/c++/13/backward/binders.h /usr/include/c++/13/tuple \
- /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/bits/utility.h \
+ /usr/include/c++/13/type_traits /usr/include/c++/13/backward/binders.h \
+ /usr/include/c++/13/tuple /usr/include/c++/13/bits/stl_pair.h \
+ /usr/include/c++/13/bits/utility.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/invoke.h \
  /usr/include/c++/13/bits/functional_hash.h \
@@ -55,11 +24,16 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/c++/13/bits/exception.h /usr/include/c++/13/typeinfo \
  /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/exception_defines.h \
- /usr/include/c++/13/unordered_map /usr/include/c++/13/initializer_list \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/c++/13/initializer_list \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/bits/stl_algobase.h \
+ /usr/include/c++/13/bits/cpp_type_traits.h \
+ /usr/include/c++/13/ext/type_traits.h \
+ /usr/include/c++/13/ext/numeric_traits.h \
  /usr/include/c++/13/bits/stl_iterator_base_types.h \
  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/13/bits/concept_check.h \
@@ -80,6 +54,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/erase_if.h \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator_args.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
@@ -90,17 +65,33 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/cstdlib \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -110,7 +101,12 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/align.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/stringfwd.h /usr/include/c++/13/bits/postypes.h \
  /usr/include/c++/13/cwchar /usr/include/wchar.h \
@@ -128,7 +124,11 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
@@ -177,7 +177,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
+ /usr/include/c++/13/tr1/gamma.tcc \
  /usr/include/c++/13/tr1/special_function_util.h \
  /usr/include/c++/13/tr1/bessel_function.tcc \
  /usr/include/c++/13/tr1/beta_function.tcc \
@@ -233,6 +234,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/local/include/Eigen/src/Core/util/Constants.h \
  /usr/local/include/Eigen/src/Core/util/Meta.h \
+ /usr/include/c++/13/cstdint \
  /usr/local/include/Eigen/src/Core/util/ForwardDeclarations.h \
  /usr/local/include/Eigen/src/Core/util/StaticAssert.h \
  /usr/local/include/Eigen/src/Core/util/XprHelper.h \
@@ -427,7 +429,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
  /usr/include/c++/13/codecvt /usr/include/c++/13/bits/codecvt.h \
  /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
@@ -607,6 +609,8 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp \
  /opt/ros/jazzy/include/rcutils/rcutils/logging_macros.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp \
+ /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/bits/parse_numbers.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/std_mutex.h \
@@ -893,12 +897,7 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_map.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/path.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
@@ -930,4 +929,81 @@ CMakeFiles/point_generator.dir/src/publisher.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
+ /home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/lbfgs.hpp \
+ /usr/local/include/Eigen/Eigen /usr/local/include/Eigen/Dense \
+ /usr/local/include/Eigen/Sparse /usr/local/include/Eigen/SparseCore \
+ /usr/local/include/Eigen/src/SparseCore/SparseUtil.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseMatrixBase.h \
+ /usr/local/include/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/local/include/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/local/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/local/include/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+ /usr/local/include/Eigen/src/plugins/BlockMethods.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseAssign.h \
+ /usr/local/include/Eigen/src/SparseCore/CompressedStorage.h \
+ /usr/local/include/Eigen/src/SparseCore/AmbiVector.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseCompressedBase.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseMatrix.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseMap.h \
+ /usr/local/include/Eigen/src/SparseCore/MappedSparseMatrix.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseVector.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseRef.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseCwiseUnaryOp.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseCwiseBinaryOp.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseTranspose.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseBlock.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseDot.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseRedux.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseView.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseDiagonalProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseSparseProductWithPruning.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseDenseProduct.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseSelfAdjointView.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseTriangularView.h \
+ /usr/local/include/Eigen/src/SparseCore/TriangularSolver.h \
+ /usr/local/include/Eigen/src/SparseCore/SparsePermutation.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseFuzzy.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseSolverBase.h \
+ /usr/local/include/Eigen/OrderingMethods \
+ /usr/local/include/Eigen/src/OrderingMethods/Amd.h \
+ /usr/local/include/Eigen/src/OrderingMethods/Ordering.h \
+ /usr/local/include/Eigen/src/OrderingMethods/Eigen_Colamd.h \
+ /usr/local/include/Eigen/SparseCholesky \
+ /usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky.h \
+ /usr/local/include/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h \
+ /usr/local/include/Eigen/SparseLU \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_gemm_kernel.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_Structs.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLUImpl.h \
+ /usr/local/include/Eigen/src/SparseCore/SparseColEtree.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_Memory.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_relax_snode.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_pivotL.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_panel_dfs.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_kernel_bmod.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_panel_bmod.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_column_dfs.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_column_bmod.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_pruneL.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU_Utils.h \
+ /usr/local/include/Eigen/src/SparseLU/SparseLU.h \
+ /usr/local/include/Eigen/SparseQR \
+ /usr/local/include/Eigen/src/SparseQR/SparseQR.h \
+ /usr/local/include/Eigen/IterativeLinearSolvers \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
+ /usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h

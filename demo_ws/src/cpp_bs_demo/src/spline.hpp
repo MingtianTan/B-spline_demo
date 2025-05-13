@@ -2,6 +2,8 @@
 // this file was orginally made by HolyQwQ @FASTLAB
 // Modified by Teemty during internship @FASTLAB
 // 2025 May
+#ifndef SPLINE_HPP
+#define SPLINE_HPP
 
 #include <vector>
 #include <cmath>
@@ -486,4 +488,5 @@ class Bspline{
         }
     };
     
+    #endif
     

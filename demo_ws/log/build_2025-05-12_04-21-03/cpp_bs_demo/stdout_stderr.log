@@ -1,8 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/point_generator.dir/src/publisher.cpp.o[0m
-[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:[m[K In member function ‘[01m[Kvoid SplinePublisher::[01;32m[Kpublish_all[m[K()[m[K’:
-[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:72:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kctrl_pts[m[K’ was not declared in this scope
-   72 |      for (int i = 0; i < [01;31m[Kctrl_pts[m[K.cols(); ++i) {
-      |                          [01;31m[K^~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/point_generator.dir/build.make:76: CMakeFiles/point_generator.dir/src/publisher.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/point_generator.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
