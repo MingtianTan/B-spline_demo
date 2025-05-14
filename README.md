@@ -33,7 +33,7 @@ B-spline_demo/
   
 ## Math of B-spline
 1.1 Introduction to Bezer Spline  
-https://zhuanlan.zhihu.com/p/688186803
+https://zhuanlan.zhihu.com/p/688186803  
 1.1.1 Definition (e3)  
 1) General formula  
 
