@@ -18,26 +18,32 @@ public:
         marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("/spline_point", 10);
         // 预设控制点列表
         std::vector<Eigen::Vector3d> points = {
-            {0, 0, 0},
-            {0, 0, 0},
+            {-5, 0, 0},
+            {-5, 0, 0},
+            {-5, 0, 0},
+            {-4, 0, 0},
+            {-3, 0, 0},
+            {-2, 0, 0},
+            {-1, 0, 0},
             {0, 0, 0},
             {1, 0, 0},
-            {2, 1, 1},
-            {3, 1, 1},
-            {4, 2, 2},
-            {5, 3, 3},
-            {4, 4, 4},
-            {3, 5, 2},
-            {3, 5, 2},
-            {3, 5, 2}
+            {2, 0, 0},
+            {3, 0, 0},
+            {4, 0, 0},
+            {5, 0, 0},
+            {5, 0, 0},
+            {5, 0, 0},
         };
         // 将控制点复制到矩阵 ctrl_pts_，尺寸为 3 x points.size()
         ctrl_pts_.resize(3, points.size());
         for (size_t i = 0; i < points.size(); ++i) {
             ctrl_pts_.col(i) = points[i];
         }
+        //make a copy
+
         // 使用 Bspline 生成初始均匀样条（3阶，间隔0.1）
         spline_.setUniformBspline(ctrl_pts_, 3, 1);
+
     }
 
     // 设置控制点并更新样条（用于更新优化后的控制点）
@@ -51,7 +57,7 @@ public:
     // 发布当前样条轨迹（nav_msgs/Path）和控制点（visualization_msgs/Marker）
     void publish_all() {
         auto route = spline_.getRoute();  // 获取轨迹路径点序列
-
+    
         // 构造并发布Path消息
         nav_msgs::msg::Path path_msg;
         path_msg.header.frame_id = "base_link";
@@ -65,9 +71,10 @@ public:
             pose.pose.orientation.w = 1.0;
             path_msg.poses.push_back(pose);
         }
+        path_pub_ = this->create_publisher<nav_msgs::msg::Path>("/new_spline_path", 10);
         path_pub_->publish(path_msg);
-
-        // 构造并发布控制点Marker（红色球体列表）
+    
+        // 构造并发布控制点Marker（黄色球体列表）
         visualization_msgs::msg::Marker marker;
         marker.header = path_msg.header;
         marker.ns = "spline_point";
@@ -75,7 +82,13 @@ public:
         marker.type = visualization_msgs::msg::Marker::SPHERE_LIST;
         marker.action = visualization_msgs::msg::Marker::ADD;
         marker.scale.x = 0.2; marker.scale.y = 0.2; marker.scale.z = 0.2;
-        marker.color.r = 1.0; marker.color.g = 0.0; marker.color.b = 0.0; marker.color.a = 1.0;
+    
+        // 设置颜色为黄色
+        marker.color.r = 1.0;
+        marker.color.g = 1.0;
+        marker.color.b = 0.0;
+        marker.color.a = 1.0;
+    
         for (int i = 0; i < ctrl_pts_.cols(); ++i) {
             geometry_msgs::msg::Point pt;
             pt.x = ctrl_pts_(0, i);
@@ -83,12 +96,17 @@ public:
             pt.z = ctrl_pts_(2, i);
             marker.points.push_back(pt);
         }
+    
+        // 修改这里的topic名，发布到新的 topic（例如 "/new_spline_point"）
+        marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("/new_spline_point", 10);
         marker_pub_->publish(marker);
     }
 
 private:
     Bspline spline_;
+    Bspline spline1_;
     Eigen::MatrixXd ctrl_pts_;
+    Eigen::MatrixXd ctrl_pts1_;
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub_;
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
 };

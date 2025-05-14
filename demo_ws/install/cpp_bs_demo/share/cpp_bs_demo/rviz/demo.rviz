@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /Path1
+        - /Path1/Topic1
         - /RobotModel1
       Splitter Ratio: 0.5
     Tree Height: 542
@@ -72,7 +74,7 @@ Visualization Manager:
         Depth: 5
         Durability Policy: Volatile
         Filter size: 10
-        History Policy: Keep Last
+        History Policy: Keep All
         Reliability Policy: Reliable
         Value: /spline_path
       Value: true
@@ -80,7 +82,7 @@ Visualization Manager:
       Enabled: true
       Name: Marker
       Namespaces:
-        spline_point: true
+        spline_control_points: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -170,7 +172,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 16.283483505249023
+      Distance: 9.738714218139648
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -185,10 +187,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.9253981709480286
+      Pitch: 0.6503984928131104
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.018575191497803
+      Yaw: 4.518565654754639
     Saved: ~
 Window Geometry:
   Displays:

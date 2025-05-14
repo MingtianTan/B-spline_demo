@@ -93,10 +93,10 @@ inline int TrajOptimizer::optimize_lbfgs()
                                                     3 * (end_col - start_col));
     double fx = 0.0;
 
-    RCLCPP_INFO(nh_->get_logger(), "L-BFGS Optimize start");
+    // RCLCPP_INFO(nh_->get_logger(), "L-BFGS Optimize start");
     int result = lbfgs::lbfgs_optimize(x, fx, &TrajOptimizer::evaluate, nullptr,
                                       &TrajOptimizer::progress, this, lbfgs_params);
-    RCLCPP_INFO(nh_->get_logger(), "result: %d", result);
+    // RCLCPP_INFO(nh_->get_logger(), "result: %d", result);
     return result;
 }
 
@@ -112,6 +112,8 @@ inline double TrajOptimizer::evaluate(void *ptr, const Eigen::VectorXd &x, Eigen
 
     Eigen::MatrixXd &control_points = obj.trajectory_->control_points_;
 
+    // RCLCPP_INFO(obj.nh_->get_logger(), "run_here 1");
+
     int total_cols = control_points.cols();
     // keep the first 3 columns and the last 3 columns of control points unchanged
     control_points.block(0, 3, 3, total_cols - 6) = Q;
@@ -120,10 +122,13 @@ inline double TrajOptimizer::evaluate(void *ptr, const Eigen::VectorXd &x, Eigen
 
     // find the closest point
     double t_start, t_end;
+
     obj.trajectory_->getTimeSpan(t_start, t_end);
+    // RCLCPP_INFO(obj.nh_->get_logger(), "t_end: %f", t_end);
+    // RCLCPP_INFO(obj.nh_->get_logger(), "run_here 2");
 
     // Find the minimum distance among points within 1.0 of target
-    Eigen::Vector3d target(4.0, 2.0, 2.0);
+    Eigen::Vector3d target(0.0, 0.0, 0.0);
     double r = 1.0;
     double t_star = 0.0;
     Eigen::Vector3d best_diff = Eigen::Vector3d::Zero();
@@ -133,7 +138,13 @@ inline double TrajOptimizer::evaluate(void *ptr, const Eigen::VectorXd &x, Eigen
     for (double t = 0.0; t <= t_end; t += 0.001) {
         Eigen::Vector3d pos = obj.trajectory_->getPos(t);
         Eigen::Vector3d diff = pos - target;
+        //check iterate process
+
         double dist = diff.norm();
+        RCLCPP_INFO(obj.nh_->get_logger(), 
+        " diff: [%f, %f, %f], t: %f,dist_norm:%f",  
+        diff(0), diff(1), diff(2), 
+        t,dist);
         if (dist <= r && (!found || dist < min_dist)) {
             min_dist = dist;
             best_diff = diff;
@@ -142,33 +153,52 @@ inline double TrajOptimizer::evaluate(void *ptr, const Eigen::VectorXd &x, Eigen
         }
     }
 
+    // RCLCPP_INFO(obj.nh_->get_logger(), 
+            // "min_dist: %f, best_diff: [%f, %f, %f], t_star: %f", 
+            // min_dist, 
+            // best_diff(0), best_diff(1), best_diff(2), 
+            // t_star);
+
     double cost = 0.0;
     if (found) {
         cost = std::pow(r - min_dist, 2.0);  // (r - ||p - target||)^2
     }
 
     // gradient define
-    Eigen::Vector3d C = 2.0 * best_diff;
+    Eigen::Vector3d vec = Eigen::Vector3d::Ones();  // 使用 Eigen 提供的 Ones() 方法
+
+    Eigen::Vector3d C = 2.0 * (best_diff - vec);
 
     // uniform time stamp
     int m = static_cast<int>(std::floor(t_star));
-    double s = t_star - m;
 
+    double s = t_star - m;
+    // RCLCPP_INFO(obj.nh_->get_logger(), "s: %f", s);
     // basis functions
     double B0 = (1 - 3*s + 3*s*s - s*s*s) / 6.0;
     double B1 = (4 - 6*s*s + 3*s*s*s) / 6.0;
     double B2 = (1 + 3*s + 3*s*s - 3*s*s*s) / 6.0;
     double B3 = s*s*s / 6.0;
+    // RCLCPP_INFO(obj.nh_->get_logger(), "B0: %f, B1: %f, B2: %f, B3: %f", B0, B1, B2, B3);
 
     // as define of grad_3D is vertical
     grad_3D.col(m)     = B0 * C;
-    grad_3D.col(m + 1) = B1 * C;
-    grad_3D.col(m + 2) = B2 * C;
+    grad_3D.col(m+1 ) = B1 * C;
+    grad_3D.col(m+2) = B2 * C;
     grad_3D.col(m + 3) = B3 * C;
 
+    //check for gradient
+    // for (int i = 0; i < grad_3D.rows(); ++i) {
+    //     for (int j = 0; j < grad_3D.cols(); ++j) {
+    //         RCLCPP_INFO(obj.nh_->get_logger(), "grad_3D[%d][%d] = %f", i, j, grad_3D(i, j));
+    //     }
+    // }
+    
     
 
     memcpy(g.data(), grad_3D.data() + 9, g.size() * sizeof(g[0]));
+
+    // RCLCPP_INFO(obj.nh_->get_logger(), "run_here 3");
     return cost;
 }
 
@@ -184,6 +214,7 @@ inline int TrajOptimizer::progress(void *ptr,
     (void)g;
     // showing the current trajectory
     TrajOptimizer &obj = *(TrajOptimizer *)ptr;
+    std::cout << "进入 progress 函数。" << std::endl;
     std::cout << "Iteration " << k << ": cost = " << fx
               << ", step = " << step << ", ls tries = " << ls << std::endl;
 
@@ -202,7 +233,7 @@ inline int TrajOptimizer::progress(void *ptr,
         path_msg.poses.push_back(pose);
     }
     obj.path_pub_->publish(path_msg);
-
+    // RCLCPP_INFO(obj.nh_->get_logger(), "run_here 4");
     // construct control points marker and publish
     visualization_msgs::msg::Marker marker;
     marker.header = path_msg.header;
@@ -226,7 +257,7 @@ inline int TrajOptimizer::progress(void *ptr,
         marker.points.push_back(pt);
     }
     obj.marker_pub_->publish(marker);
-
+    // RCLCPP_INFO(obj.nh_->get_logger(), "run_here 5");
     return 0;
 }
 

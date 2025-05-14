@@ -1,0 +1,8 @@
+In file included from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:5[m[K:
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:[m[K In static member function ‘[01m[Kstatic int TrajOptimizer::[01;32m[Kprogress[m[K(void*, const Eigen::VectorXd&, const Eigen::VectorXd&, double, double, int, int)[m[K’:
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:182:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  182 |     [01;35m[Kconst Eigen::VectorXd &x[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:183:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  183 |     [01;35m[Kconst Eigen::VectorXd &g[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K

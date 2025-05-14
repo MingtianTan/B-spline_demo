@@ -1,0 +1,35 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/point_generator.dir/src/publisher.cpp.o[0m
+In file included from [01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/publisher.cpp:5[m[K:
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:[m[K In static member function ‘[01m[Kstatic int TrajOptimizer::[01;32m[Kprogress[m[K(void*, const Eigen::VectorXd&, const Eigen::VectorXd&, double, double, int, int)[m[K’:
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:182:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  182 |     [01;35m[Kconst Eigen::VectorXd &x[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/teemty/B-spline-demo/demo_ws/src/cpp_bs_demo/src/optimizer.hpp:183:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  183 |     [01;35m[Kconst Eigen::VectorXd &g[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[100%] [32m[1mLinking CXX executable point_generator[0m
+[100%] Built target point_generator
+-- Install configuration: ""
+-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/lib/cpp_bs_demo/point_generator
+-- Set non-toolchain portion of runtime path of "/home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/lib/cpp_bs_demo/point_generator" to ""
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/urdf
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/urdf/ball_obstacle.urdf
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/launch
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/launch/bs_demo.launch.py
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/rviz
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/rviz/demo.rviz
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/package_run_dependencies/cpp_bs_demo
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/parent_prefix_path/cpp_bs_demo
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.sh
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.sh
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/environment/path.dsv
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.bash
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.sh
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.zsh
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/local_setup.dsv
+-- Installing: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/package.dsv
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/ament_index/resource_index/packages/cpp_bs_demo
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig.cmake
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/cmake/cpp_bs_demoConfig-version.cmake
+-- Up-to-date: /home/teemty/B-spline-demo/demo_ws/install/cpp_bs_demo/share/cpp_bs_demo/package.xml

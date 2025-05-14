@@ -8,7 +8,7 @@
   <joint name="base_to_ball" type="fixed">
     <parent link="base_link"/>
     <child link="ball"/>
-    <origin xyz="4 2 2" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
   <!-- 球体 link -->
