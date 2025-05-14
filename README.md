@@ -40,7 +40,7 @@ https://zhuanlan.zhihu.com/p/688186803
 ![Alt text](pic/2.png)
 
 3) Normalization Process of the domain  
-![Alt text](pic/2.png)  
+![Alt text](pic/3.png)  
 1.1.2 Property  
 1) N+1 control points -> N convexity  
 2) Convex hull: enclosed by the minimum number of convex polygons  
