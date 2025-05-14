@@ -36,8 +36,8 @@ B-spline_demo/
 https://zhuanlan.zhihu.com/p/688186803  
 1.1.1 Definition (e3)  
 1) General formula  
-![Alt text](pic/1.png)
-![Alt text](pic/2.png)
+![Alt text](pic/1.png)  
+![Alt text](pic/2.png)  
 
 3) Normalization Process of the domain  
 ![Alt text](pic/3.png)  
