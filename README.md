@@ -5,32 +5,32 @@ Whole program is built via ros2 rclcpp package
 Made by Teemty during intership @Fastlab and thanks HolyQwQ for instructions.
 
 ## code structure
-B-spline_demo/
-├── demo_ws/
-│   ├── src/
-│   │   ├── cpp_bs_demo/
-│   │   │   ├── launch/
-│   │   │   │   └── bs_demo.launch.py
-│   │   │   ├── rviz/
-│   │   │   │   └── demo.rviz
-│   │   │   ├── urdf/
-│   │   │   │   └── ball_obstacle.urdf
-│   │   │   ├── src/
-│   │   │   │   ├── lbfgs.hpp
-│   │   │   │   ├── optimizer.hpp
-│   │   │   │   ├── publisher.cpp
-│   │   │   │   └── spline.hpp
-│   │   │   ├── CMakeLists.txt
-│   │   │   └── package.xml
-│   │   └── cpp_bs_demo_interface/
-│   │       ├── msg/
-│   │       │   └── trajectory.msg
-│   │       ├── CMakeLists.txt
-│   │       └── package.xml
-├── CMakeLists.txt
-├── Makefile
-└── README.md
-
+B-spline_demo/  
+├── demo_ws/  
+│   ├── src/  
+│   │   ├── cpp_bs_demo/  
+│   │   │   ├── launch/  
+│   │   │   │   └── bs_demo.launch.py  
+│   │   │   ├── rviz/  
+│   │   │   │   └── demo.rviz  
+│   │   │   ├── urdf/  
+│   │   │   │   └── ball_obstacle.urdf  
+│   │   │   ├── src/  
+│   │   │   │   ├── lbfgs.hpp  
+│   │   │   │   ├── optimizer.hpp  
+│   │   │   │   ├── publisher.cpp  
+│   │   │   │   └── spline.hpp  
+│   │   │   ├── CMakeLists.txt  
+│   │   │   └── package.xml  
+│   │   └── cpp_bs_demo_interface/  
+│   │       ├── msg/  
+│   │       │   └── trajectory.msg  
+│   │       ├── CMakeLists.txt  
+│   │       └── package.xml  
+├── CMakeLists.txt  
+├── Makefile  
+└── README.md  
+  
 ## Math of B-spline
 1.1 Introduction to Bezer Spline
 https://zhuanlan.zhihu.com/p/688186803
