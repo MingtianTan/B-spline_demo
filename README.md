@@ -1,8 +1,8 @@
 # B-spline_demo
 ## introduction
-This project aims to help learning about B-spline Math, LBFGS optimizer using, writing cost function in evaluate() function
-Whole program is built via ros2 rclcpp package
-Made by Teemty during intership @Fastlab and thanks HolyQwQ for instructions.
+This project aims to help learning about B-spline Math, LBFGS optimizer, and writing the cost function in the evaluate() function  
+The whole program is built via the ros2 rclcpp package  
+Made by Teemty during intership @Fastlab, and thanks HolyQwQ for instructions.  
 
 ## code structure
 B-spline_demo/  
@@ -32,26 +32,28 @@ B-spline_demo/
 └── README.md  
   
 ## Math of B-spline
-1.1 Introduction to Bezer Spline  
+1.1 Introduction to Bezier Spline  
 https://zhuanlan.zhihu.com/p/688186803  
 1.1.1 Definition (e3)  
 1) General formula  
 ![Alt text](pic/1.png)
+![Alt text](pic/2.webp)
 
-2) Normalization Process of domain  
-
+3) Normalization Process of the domain  
+![Alt text](pic/2.png)  
 1.1.2 Property  
 1) N+1 control points -> N convexity  
 2) Convex hull: enclosed by the minimum number of convex polygons  
 3) 变差减少性  
-
+![Alt text](pic/4.png) 
 4) 仿射不变性: stability in 仿射变换  
 5) 递归性  
-
+![Alt text](pic/5.png)
+![Alt text](pic/6.png) 
 
 1.2 Control points' effect on spline  
 1.2.1 New equation generation  
-
+![Alt text](pic/7.png) 
 
 
 1.3 De Casteljau Method 
@@ -75,5 +77,6 @@ source install/setup.bash
 ros2 launch cpp_bs_demo bs_demo.launch.py  
 
 ##Results
-
+![Alt text](pic/param.png) 
+![Alt text](pic/result.png) 
 
